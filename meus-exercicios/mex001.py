@@ -1,0 +1,6 @@
+nome = input('Nome do funcionário: ')
+sal = float(input('Salário atual de {}. R$'.format(nome)))
+por = float(input('Aumentar salário de {} em %'.format(nome)))
+novo = sal + (sal * por / 100)
+print('O funcionário {}, tinha um salário de R${:.2f}.'.format(nome, sal))
+print('Mas houve um aumento de {:.1f}%, ganhando R${:.2f}.'.format(por, novo))
