@@ -1,5 +1,12 @@
+# Minha solução
 aluno = input('Nome do aluno: ')
 pri = float(input('Primeira nota de {}: '.format(aluno)))
 seg = float(input('Segunda nota de {}: '.format(aluno)))
 media = (pri + seg) / 2
-print('A média do aluno {} é de {}.'.format(aluno, media))
+print('A média entre {:.1f} e {:.1f} do aluno {} é de {:.1f}.'.format(pri, seg, aluno, media))
+
+# Solução Gustavo Guanabara (CursoemVideo)
+# n1 = float(input('Primeira nota do aluno: '))
+# n2 = float(input('Segunda nota do aluno: '))
+# média = (n1 + n2) / 2
+# print('A média entre {:.1f} e {:.1f} é igual a {:.1f}'.format(n1, n2, média))

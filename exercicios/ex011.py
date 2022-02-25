@@ -1,6 +1,16 @@
-larg = int(input('Qual a largura da parede em metros? '))
-alt = int(input('Qual a altura da parede em metros? '))
-area = alt * larg
-tinta = area / 2
-print('Com largura de {}m e altura de {}m, possui uma área de {}m.'.format(larg, alt, area))
-print('Cada litro de tinta, pinta 2m, então vai precisar de {} litros de tinta para pintar a parede por completo.'.format(tinta))
+# Minha solução
+# larg = float(input('Qual a largura da parede? '))
+# alt = float(input('Qual a altura da parede? '))
+# area = alt * larg
+# tinta = area / 2
+# print('Com largura de {}m e altura de {}m, possui uma área de {}m².'.format(larg, alt, area))
+# print('Você vai precisar de {}l de tinta para pintar a parede por completo.'.format(tinta))
+
+# Solução de Gustavo Guanabara (CursoemVideo)
+
+# larg = float(input('Largura da parede: '))
+# alt = float(input('Altura da parede: '))
+# área = larg * alt
+# print('Sua parede tem a dimensão de {}x{} e sua área é de {}m².'.format(larg, alt, área))
+# tinta = área / 2
+# print('Para pintar essa parede, você precisará de {}l de tinta.'.format(tinta))
