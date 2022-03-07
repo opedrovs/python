@@ -1,8 +1,12 @@
 # Minha solução
+cores = {
+    'limpar': '\033[m',
+    'roxo': '\033[0;35m'
+}
 frase = str(input('Digite uma frase: ')).strip()
-print('A letra A aparece {} vezes na frase.'.format(frase.lower().count('a')))
-print('A primeira letra A apareceu na posição {}'.format(frase.lower().find('a')+1))
-print('A última letra A apareceu na posição {}'.format(frase.lower().rfind('a')+1))
+print('A letra A aparece {}{}{} vezes na frase.'.format(cores['roxo'], frase.lower().count('a'), cores['limpar']))
+print('A primeira letra A apareceu na posição {}{}{}'.format(cores['roxo'], frase.lower().find('a')+1, cores['limpar']))
+print('A última letra A apareceu na posição {}{}{}'.format(cores['roxo'], frase.lower().rfind('a')+1, cores['limpar']))
 
 # ou
 

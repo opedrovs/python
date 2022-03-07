@@ -3,12 +3,24 @@
 
 # Minha solução
 
-cotacao = float(input('Antes de mais nada, quanto está a cotação do Dólar? US$'))
+cores = {
+    'limpar': '\033[m',
+    'verde': '\033[0;32m',
+    'amarelo': '\033[0;33m',
+    'azul': '\033[0;34m'
+}
+
+l = cores['limpar']
+v = cores['verde']
+am = cores['amarelo']
+az = cores['azul']
+
+cotacao = float(input('Antes de mais nada, quanto está a cotação do Dólar? {}US${}'.format(az, l)))
 # cotacaoeuro = float(input('Antes de mais nada, quanto está a cotação do Euro? €'))
-real = float(input('Quantos R$ você tem na carteira? R$'))
+real = float(input('Quantos R$ você tem na carteira? {}R${}'.format(v, l)))
 dolar = real / cotacao
 # euro = real / cotacaoeuro
-print('Com R${:.2f} você pode comprar US${:.2f}!'.format(real, dolar))
+print('Com {}R${:.2f}{} você pode comprar {}US${:.2f}{}!'.format(v, real, l, az, dolar, l))
 # print('Com R${:.2f} você pode comprar €{:.2f}!'.format(real, euro))
 
 # Solução Gustavo Guanabara (CursoemVideo)

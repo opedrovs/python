@@ -1,4 +1,9 @@
 # Minha solução (Jeito errado pois só reconhece 4 algarismos!)
+cores = {
+    'limpar': '\033[m',
+    'amarelo': '\033[0;33m',
+
+}
 '''
 num = str(input('Informe um número: '))
 print('Unidade: {}'.format(num[3]))
@@ -13,7 +18,7 @@ u = num // 1 % 10
 d = num // 10 % 10
 c = num // 100 % 10
 m = num // 1000 % 10
-print('Unidade: {}'.format(u))
-print('Dezena: {}'.format(d))
-print('Centena: {}'.format(c))
-print('Milhar: {}'.format(m))
+print('Unidade: {}{}{}'.format(cores['amarelo'], u, cores['limpar']))
+print('Dezena: {}{}{}'.format(cores['amarelo'], d, cores['limpar']))
+print('Centena: {}{}{}'.format(cores['amarelo'], c, cores['limpar']))
+print('Milhar: {}{}{}'.format(cores['amarelo'], m, cores['limpar']))

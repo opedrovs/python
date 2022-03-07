@@ -1,10 +1,10 @@
 # Minha solução
-# larg = float(input('Qual a largura da parede? '))
-# alt = float(input('Qual a altura da parede? '))
-# area = alt * larg
-# tinta = area / 2
-# print('Com largura de {}m e altura de {}m, possui uma área de {}m².'.format(larg, alt, area))
-# print('Você vai precisar de {}l de tinta para pintar a parede por completo.'.format(tinta))
+larg = float(input('Qual a largura da parede? '))
+alt = float(input('Qual a altura da parede? '))
+area = alt * larg
+tinta = area / 2
+print('Com largura de {}m e altura de {}m, possui uma área de {}m².'.format(larg, alt, area))
+print('Você vai precisar de {}l de tinta para pintar a parede por completo.'.format(tinta))
 
 # Solução de Gustavo Guanabara (CursoemVideo)
 
