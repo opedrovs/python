@@ -1,8 +1,15 @@
 # Minha solução
+
+cores = {
+    'limpar': '\033[m',
+    'vermel': '\033[0;31m',
+    'amarel': '\033[0;33m'
+}
+
 dias = int(input('Quantos dias alugados? '))
 km = float(input('Quantos Km rodados? '))
 tot = (dias * 60) + (km * 0.15)
-print('O total a pagar é de R${:.2f}'.format(tot))
+print('{}O total a pagar é de {}{}R${:.2f}{}'.format(cores['vermel'], cores['limpar'], cores['amarel'], tot, cores['limpar']))
 
 # Solução Gustavo Guanabara (CursoemVideo)
 # dias = int(input('Quantos dias alugados? '))

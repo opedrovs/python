@@ -1,10 +1,23 @@
 # Minha solução
+
+cores = {
+    'limpar': '\033[m',
+    'amarelo': '\033[0;33m',
+    'verde': '\033[0;32m',
+    'roxo': '\033[0;35m'
+}
+
+l = cores['limpar']
+a = cores['amarelo']
+v = cores['verde']
+r = cores['roxo']
+
 larg = float(input('Qual a largura da parede? '))
 alt = float(input('Qual a altura da parede? '))
 area = alt * larg
 tinta = area / 2
-print('Com largura de {}m e altura de {}m, possui uma área de {}m².'.format(larg, alt, area))
-print('Você vai precisar de {}l de tinta para pintar a parede por completo.'.format(tinta))
+print('Com largura de {}{}m{} e altura de {}{}m{}, possui uma área de {}{}m²{}.'.format(a, larg, l, a, alt, l, v, area, l))
+print('Você vai precisar de {}{}l{} de tinta para pintar a parede por completo.'.format(r, tinta, l))
 
 # Solução de Gustavo Guanabara (CursoemVideo)
 
