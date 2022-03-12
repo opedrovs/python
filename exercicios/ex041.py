@@ -1,12 +1,10 @@
 from datetime import date
 # Minha solução
-
 cores = {
     'limpar': '\033[m',
     'verde': '\033[0;32m',
-    'amarelo': '\033[0;33m',
+    'amarelo': '\033[0;33m'
 }
-
 l = cores['limpar']
 vd = cores['verde']
 am = cores['amarelo']

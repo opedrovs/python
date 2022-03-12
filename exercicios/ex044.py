@@ -1,5 +1,4 @@
 # Minha solução
-
 cores = {
     'limpar': '\033[m',
     'vermelho': '\033[0;31m',
@@ -8,13 +7,17 @@ cores = {
     'azul': '\033[0;34m',
     'roxo': '\033[0;35m'
 }
-
 l = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
 az = cores['azul']
 rx = cores['roxo']
+
+# - à vista dinheiro/cheque: 10% de desconto
+# - à vista no cartão: 5% de desconto
+# - em até 2x no cartão: preço formal
+# - 3x ou mais no cartão: 20% de juros
 
 loja = f' {az}LOJAS GUANABARA{l} '
 print(f'{loja:=^42}')
@@ -25,11 +28,6 @@ print(f'[ {rx}2{l} ] á vista cartão')
 print(f'[ {rx}3{l} ] 2x no cartão')
 print(f'[ {rx}4{l} ] 3x ou mais no cartão')
 opcao = int(input('Qual é a opção? '))
-
-# - à vista dinheiro/cheque: 10% de desconto
-# - à vista no cartão: 5% de desconto
-# - em até 2x no cartão: preço formal
-# - 3x ou mais no cartão: 20% de juros
 
 # Não mostra o valor da compra caso erra a opção
 '''

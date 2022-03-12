@@ -1,12 +1,10 @@
 # Minha solução
-
 cores = {
     'limpar': '\033[m',
     'verde': '\033[0;32m',
     'amarelo': '\033[0;33m',
     'roxo': '\033[0;35m'
 }
-
 l = cores['limpar']
 vd = cores['verde']
 am = cores['amarelo']

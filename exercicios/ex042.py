@@ -1,5 +1,4 @@
 # Minha solução
-
 cores = {
     'limpar': '\033[m',
     'vermelho': '\033[0;31m',
@@ -7,7 +6,6 @@ cores = {
     'amarelo': '\033[0;33m',
     'azul': '\033[0;34m'
 }
-
 l = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
@@ -17,7 +15,6 @@ az = cores['azul']
 a = float(input(f'{az}Primeiro segmento:{l} '))
 b = float(input(f'{az}Segundo segmento:{l} '))
 c = float(input(f'{az}Terceiro segmento:{l} '))
-
 if a < b + c and b < a + c and c < a + b:
     if a == b == c:
         forma = 'EQUILÁTERO'
