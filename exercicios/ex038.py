@@ -16,3 +16,15 @@ elif seg > pri:
     print(f'O {vd}SEGUNDO{l} valor é maior')
 else:
     print(f'Os dois valores são {am}IGUAIS{l}')
+
+# Solução Gustavo Guanabara
+'''
+n1 = int(input('Primeiro número: '))
+n2 = int(input('Segundo número: '))
+if n1 > n2:
+    print('O PRIMEIRO valor é maior')
+elif n1 < n2:
+    print('O SEGUNDO valor é maior')
+else:
+    print('Os dois valores são IGUAIS')
+'''

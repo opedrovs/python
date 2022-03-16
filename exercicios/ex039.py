@@ -20,7 +20,7 @@ print(f'Quem nasceu em {am}{ano}{l} tem {am}{idade} anos {l}em {rx}{anoatual}{l}
 
 if idade <= 18:
     print(f'Ainda faltam {vd}{18-idade} anos {l}para o alistamento')
-    print(f'Seu alistamento será em {vm2}{anoatual+(18-idade)}{l}.')
+    print(f'Seu alistamento será em {vm}{anoatual+(18-idade)}{l}.')
 else:
     print(f'Você já deveria ter se alistado há {vm}{idade-18} anos{l}.')
     print(f'Seu alistamento foi em {vd}{anoatual-(idade-18)}{l}.')
