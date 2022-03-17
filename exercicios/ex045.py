@@ -31,7 +31,7 @@ computador = choice(jogadas)
 if jogador >= 3:
     print(f'{vm}[ERRO] Jogada inválida!{l}')
 elif jogador == 0:
-    # Caso o jogador jogue PEDRA
+    # Jogador jogou PEDRA
     jogador = 'Pedra'
     if computador == 'Tesoura':
         # Jogador vencedor
@@ -41,14 +41,14 @@ elif jogador == 0:
         vencedor = f'{vm}VENCE COMPUTADOR{l}'
     elif computador == jogador:
         # Empate
-        vencedor = f'{am}HOUVE UM EMPATE{l}'
-    print(f'{az}-={l}' * 12)
-    print(f'Jogador jogou {am}{jogador}{l}')
+        vencedor = f'{am}EMPATE{l}'
+    print(f'-=' * 12)
     print(f'Computador jogou {am}{computador}{l}')
-    print(f'{az}-={l}' * 12)
+    print(f'Jogador jogou {am}{jogador}{l}')
+    print(f'-=' * 12)
     print(vencedor)
 elif jogador == 1:
-    # Caso o jogador jogue PAPEL
+    # Jogador jogou PAPEL
     jogador = 'Papel'
     if computador == 'Pedra':
         # Jogador vencedor
@@ -58,14 +58,14 @@ elif jogador == 1:
         vencedor = f'{vm}VENCE COMPUTADOR{l}'
     elif computador == jogador:
         # Empate
-        vencedor = f'{am}HOUVE UM EMPATE{l}'
-    print(f'{az}-={l}' * 12)
-    print(f'Jogador jogou {am}{jogador}{l}')
+        vencedor = f'{am}EMPATE{l}'
+    print(f'-=' * 12)
     print(f'Computador jogou {am}{computador}{l}')
-    print(f'{az}-={l}' * 12)
+    print(f'Jogador jogou {am}{jogador}{l}')
+    print(f'-=' * 12)
     print(vencedor)
 elif jogador == 2:
-    # Caso o jogador jogue TESOURA
+    # Jogador jogou TESOURA
     jogador = 'Tesoura'
     if computador == 'Papel':
         # Jogador vencedor
@@ -75,9 +75,56 @@ elif jogador == 2:
         vencedor = f'{vm}VENCE COMPUTADOR{l}'
     elif computador == jogador:
         # Empate
-        vencedor = f'{am}HOUVE UM EMPATE{l}'
-    print(f'{az}-={l}' * 12)
-    print(f'Jogador jogou {am}{jogador}{l}')
+        vencedor = f'{am}EMPATE{l}'
+    print(f'-=' * 12)
     print(f'Computador jogou {am}{computador}{l}')
-    print(f'{az}-={l}' * 12)
+    print(f'Jogador jogou {am}{jogador}{l}')
+    print(f'-=' * 12)
     print(vencedor)
+
+# Solução Gustavo Guanabara
+# from random import randint
+# from time import sleep
+# itens = ('Pedra', 'Papel', 'Tesoura')
+# computador = randint(0, 2)
+# print('''Suas opções:
+# [ 0 ] Pedra
+# [ 1 ] Papel
+# [ 2 ] Tesoura''')
+# jogador = int(input('Qual é a sua jogada? '))
+# print('JO')
+# sleep(1)
+# print('KEN')
+# sleep(1)
+# print('PO!!!')
+# print('-='*11)
+# print('Computador jogou {}'.format(itens[computador]))
+# print('Jogador jogou {}'.format(itens[jogador]))
+# print('-='*11)
+# if computador == 0:
+#     if jogador == 0:
+#         print('EMPATE')
+#     elif jogador == 1:
+#         print('VENCE JOGADOR')
+#     elif jogador == 2:
+#         print('VENCE COMPUTADOR')
+#     else:
+#         print('JOGADA INVÁLIDA!')
+# elif computador == 1:
+#     if jogador == 0:
+#         print('VENCE COMPUTADOR')
+#     elif jogador == 1:
+#         print('EMPATE')
+#     elif jogador == 2:
+#         print('VENCE JOGADOR')
+#     else:
+#         print('JOGADA INVÁLIDA!')
+# elif computador == 2:
+#     if jogador == 0:
+#         print('VENCE JOGADOR')
+#     elif jogador == 1:
+#         print('VENCE COMPUTADOR')
+#     elif jogador == 2:
+#         print('EMPATE')
+#     else:
+#         print('JOGADA INVÁLIDA!')
