@@ -1,4 +1,4 @@
-from random import choice
+from random import choice, randint
 from time import sleep
 # Minha solução
 cores = {
@@ -16,6 +16,59 @@ am = cores['amarelo']
 az = cores['azul']
 rx = cores['roxo']
 
+# Minha solução após ver a resposta:
+
+print(f'''Suas opções:
+[ {rx}0{l} ] PEDRA
+[ {rx}1{l} ] PAPEL
+[ {rx}2{l} ] TESOURA''')
+itens = ('Pedra', 'Papel', 'Tesoura')
+jogador = int(input('Qual é a sua jogada? '))
+computador = randint(0, 2)
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
+if jogador < 0 or jogador >= 3:
+    print(f'{vm}JOGADA INVÁLIDA!{l}')
+elif computador == 0:
+    print('-=' * 11)
+    print(f'Computador jogou {am}{itens[computador]}{l}')
+    print(f'Jogador jogou {am}{itens[jogador]}{l}')
+    print('-=' * 11)
+    if jogador == 0:
+        print(f'{am}EMPATE{l}')
+    elif jogador == 1:
+        print(f'{vd}VENCE JOGADOR{l}')
+    elif jogador == 2:
+        print(f'{vm}VENCE COMPUTADOR{l}')
+elif computador == 1:
+    print('-=' * 11)
+    print(f'Computador jogou {am}{itens[computador]}{l}')
+    print(f'Jogador jogou {am}{itens[jogador]}{l}')
+    print('-=' * 11)
+    if jogador == 0:
+        print(f'{vm}VENCE COMPUTADOR{l}')
+    elif jogador == 1:
+        print(f'{am}EMPATE{l}')
+    elif jogador == 2:
+        print(f'{vd}VENCE JOGADOR{l}')
+elif computador == 2:
+    print('-=' * 11)
+    print(f'Computador jogou {am}{itens[computador]}{l}')
+    print(f'Jogador jogou {am}{itens[jogador]}{l}')
+    print('-=' * 11)
+    if jogador == 0:
+        print(f'{vd}VENCE JOGADOR{l}')
+    elif jogador == 1:
+        print(f'{vm}VENCE COMPUTADOR{l}')
+    elif jogador == 2:
+        print(f'{am}EMPATE{l}')
+
+# Minha primeira solução (sem ver a resposta)
+
+'''
 print('Suas opções:')
 print(f'[ {rx}0{l} ] PEDRA')
 print(f'[ {rx}1{l} ] PAPEL')
@@ -81,6 +134,7 @@ elif jogador == 2:
     print(f'Jogador jogou {am}{jogador}{l}')
     print(f'-=' * 12)
     print(vencedor)
+'''
 
 # Solução Gustavo Guanabara
 # from random import randint
