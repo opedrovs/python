@@ -1,14 +1,13 @@
-'''
+# Minha solução:
 num = int(input('Digite um número para ver sua tabuada: '))
 for cont in range(1, 11):
     print(f'{num} x {cont:2} = {num*cont}')
+
+# Outra solução, onde coloca limite de final:
 '''
-
-# OU (colocando o limite do final)
-
-
 num = int(input('Digite um número para ver sua tabuada: '))
-fim = int(input('Digite até o número que quer ter essa tabuada: '))
+fim = int(input('Até que linha quer ter na tabuada: '))
 
-for cont in range(1, fim+1):
-    print(f'{num} x {cont:2} = {num*cont}')
+for cont in range(1, fim + 1):
+    print(f'{num} x {cont:2} = {num * cont}')
+'''
