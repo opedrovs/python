@@ -23,5 +23,5 @@ for cont in range(1, 8):
         maior += 1
     else:
         menor += 1
-print(f'Ao todo tivemos {vd}{maior} pessoas maiores{l} de idade')
-print(f'E também tivemos {vm}{menor} pessoas menores{l} de idade')
+print(f'Ao todo tivemos {am}{maior}{vd} pessoas maiores{l} de idade')
+print(f'E também tivemos {am}{menor}{vm} pessoas menores{l} de idade')

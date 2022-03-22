@@ -22,7 +22,7 @@ print(emoji.emojize(f'{vm}BUM! BUM! POOOW! :fireworks:{l}', use_aliases=True))
 import emoji
 from time import sleep
 for c in range(10, -1, -1):
-    sleep(1)
+    sleep(0.8)
     if c >= 7:
         print(f'{vd}{c}{l}')
     elif c >= 3:

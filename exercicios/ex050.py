@@ -19,4 +19,4 @@ for cont in range(1, 7):
     if num % 2 == 0:
         valores += 1
         soma += num
-print(f'A soma dos {vd}{valores}{l} valores pares é de {vd}{soma}{l}.')
+print(f'A soma dos {vd}{valores}{l} valores PARES é de {vd}{soma}{l}.')

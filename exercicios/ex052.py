@@ -17,8 +17,10 @@ for cont in range(1, num+1):
         print(f'{am}{cont}{l}', end=' ')
         divisivel += 1
         if divisivel == 2:
+            # Se o número é PRIMO
             primo = f'{vd}É PRIMO{l}'
         else:
+            # Se o número NÃO é PRIMO
             primo = f'{vm}NÃO É PRIMO{l}'
     else:
         print(f'{vm}{cont}{l}', end=' ')
