@@ -137,6 +137,7 @@ elif jogador == 2:
 '''
 
 # Solução Gustavo Guanabara
+
 # from random import randint
 # from time import sleep
 # itens = ('Pedra', 'Papel', 'Tesoura')
