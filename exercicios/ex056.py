@@ -12,7 +12,7 @@ am = cores['amarelo']
 az = cores['azul']
 
 # Minha solução
-'''
+
 media = 0
 listahomens = []
 velhoidade = 0
@@ -42,11 +42,17 @@ for cont in range(1, 5):
         # Sexo inválido!
         print('[ERRO] Sexo inválido. Desconsiderado!')
 print(f'A média de idade do grupo é de {az}{media:.1f} anos{l}')
-print(f'O homem {vd}mais{l} velho tem {am}{velhoidade} anos{l} e se chama {am}{velhonome}{l}.')
-print(f'Ao todo são {am}{totalm} mulheres{l} com {vm}menos{l} de 20 anos.')
-'''
+if velhoidade == 0:
+    pass
+else:
+    print(f'O homem {vd}mais{l} velho tem {am}{velhoidade} anos{l} e se chama {am}{velhonome}{l}.')
+if totalm == 0:
+    pass
+else:
+    print(f'Ao todo são {am}{totalm} mulheres{l} com {vm}menos{l} de 20 anos.')
 
 # Solução Gustavo Guanabara:
+'''
 somaidade = 0
 mediaidade = 0
 maioridadehomem = 0
@@ -71,3 +77,4 @@ mediaidade = somaidade / 4
 print('A média de idade do grupo é de {:.1f} anos'.format(mediaidade))
 print('O homem mais velho tem {} anos e se chama {}.'.format(maioridadehomem, nomevelho))
 print('Ao todo são {} mulheres com menos de 20 anos'.format(totmulher20))
+'''
