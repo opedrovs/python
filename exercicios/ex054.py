@@ -11,8 +11,8 @@ vd = cores['verde']
 am = cores['amarelo']
 az = cores['azul']
 
-from datetime import date
 # Minha solução
+from datetime import date
 atual = date.today().year
 maior = 0
 menor = 0
@@ -23,5 +23,22 @@ for cont in range(1, 8):
         maior += 1
     else:
         menor += 1
-print(f'Ao todo tivemos {am}{maior}{vd} pessoas maiores{l} de idade')
-print(f'E também tivemos {am}{menor}{vm} pessoas menores{l} de idade')
+print(f'Ao todo tivemos {am}{maior}{l} pessoas {vd}maiores{l} de idade')
+print(f'E também tivemos {am}{menor}{l} pessoas {vm}menores{l} de idade')
+
+# Solução Gustavo Guanabara
+'''
+from datetime import date
+atual = date.today().year
+totmaior = 0
+totmenor = 0
+for pess in range(1, 8):
+    nasc = int(input('Em que ano a {}º pessoa nasceu? '.format(pess)))
+    idade = atual - nasc
+    if idade >= 21:
+        totmaior += 1
+    else:
+        totmenor += 1
+print('Ao todo tivemos {} pessoas maiores de idade'.format(totmaior))
+print('E também tivemos {} pessoas menores de idade'.format(totmenor))
+'''

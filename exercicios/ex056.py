@@ -12,18 +12,19 @@ am = cores['amarelo']
 az = cores['azul']
 
 # Minha solução
+'''
+media = 0
 listahomens = []
 velhoidade = 0
 velhonome = '-'
 listamulheres = []
 totalm = 0
-media = 0
 for cont in range(1, 5):
     print(f'{am}{f" {az}{cont}º PESSOA{am} ":-^35}{l}')
-    # print(f'{az}{f" {cont}º PESSOA ":-^21}{l}')
     nome = str(input('Nome: ')).strip()
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo [M/F]: ')).upper().strip()
+    sexo = str(input('Sexo [M/F]: ')).strip().upper()
+    media += idade / 4
     if sexo == 'M':
         # Sexo Masculino (M)
         listahomens += [nome, idade, sexo]
@@ -40,8 +41,33 @@ for cont in range(1, 5):
     else:
         # Sexo inválido!
         print('[ERRO] Sexo inválido. Desconsiderado!')
-
-    media += idade / 4
 print(f'A média de idade do grupo é de {az}{media:.1f} anos{l}')
 print(f'O homem {vd}mais{l} velho tem {am}{velhoidade} anos{l} e se chama {am}{velhonome}{l}.')
 print(f'Ao todo são {am}{totalm} mulheres{l} com {vm}menos{l} de 20 anos.')
+'''
+
+# Solução Gustavo Guanabara:
+somaidade = 0
+mediaidade = 0
+maioridadehomem = 0
+nomevelho = ''
+totmulher20 = 0
+for p in range(1, 5):
+    print('----- {}º PESSOA -----'.format(p))
+    nome = str(input('Nome: ')).strip()
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo [M/F]: ')).strip()
+    somaidade += idade
+    if p == 1 and sexo in 'Mm':
+        maioridadehomem = idade
+        nomevelho = nome
+    if sexo in 'Mm' and idade > maioridadehomem:
+        maioridadehomem = idade
+        nomevelho = nome
+    if sexo in 'Ff' and idade < 20:
+        totmulher20 += 1
+
+mediaidade = somaidade / 4
+print('A média de idade do grupo é de {:.1f} anos'.format(mediaidade))
+print('O homem mais velho tem {} anos e se chama {}.'.format(maioridadehomem, nomevelho))
+print('Ao todo são {} mulheres com menos de 20 anos'.format(totmulher20))

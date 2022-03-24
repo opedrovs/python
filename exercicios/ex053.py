@@ -11,30 +11,71 @@ vd = cores['verde']
 am = cores['amarelo']
 az = cores['azul']
 
-# Minha solução (com laço de repetição):
-frase = str(input('Digite uma frase: '))
-separa = frase.split()
-juntar = ''.join(separa).upper()
-
-for cont in range(len(juntar), 0, -1):
-    inverso = juntar[::-cont]
-print(f'O inverso de {juntar} é {az}{inverso}{l}')
-if juntar == inverso:
+# Minha solução (após ver a resposta):
+frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = ''
+for letra in range(len(junto) - 1, -1, -1):
+    inverso += junto[letra]
+print(f'O inverso de {junto} é {az}{inverso}{l}')
+if inverso == junto:
     print(f'{vd}Temos um {am}políndromo{vd}!{l}')
 else:
-    print(f'{vm}A frase digitado não é um {am}políndromo{vm}!{l}')
+    print(f'{vm}A frase digitada não é um {am}políndromo{vm}!{l}')
 
+# Minha solução (com laço de repetição):
+'''
+frase = str(input('Digite uma frase: ')).upper().strip()
+separado = frase.split()
+junto = ''.join(separado)
 
+for cont in range(len(junto), 0, -1):
+    inverso = junto[::-cont]
+print(f'O inverso de {junto} é {az}{inverso}{l}')
+if junto == inverso:
+    print(f'{vd}Temos um {am}políndromo{vd}!{l}')
+else:
+    print(f'{vm}A frase digitada não é um {am}políndromo{vm}!{l}')
+'''
 
 # Minha solução (sem laço de repetição):
 '''
-frase = input('Digite uma frase: ')
-separa = frase.split()
-juntar = ''.join(separa).upper()
+frase = input('Digite uma frase: ').upper().strip()
+separado = frase.split()
+junto = ''.join(separado)
 
-inverso = juntar[::-1]
-print(f'O inverso de {juntar} é {inverso}')
-if juntar == inverso:
+inverso = junto[::-1]
+print(f'O inverso de {junto} é {inverso}')
+if junto == inverso:
+    print('Temos um políndromo!')
+else:
+    print('A frase digitada não é um políndromo!')
+'''
+
+# Solução Gustavo Guanabara:
+'''
+frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = ''
+for letra in range(len(junto) - 1, -1, -1):
+    inverso += junto[letra]
+print('O inverso de {} é {}'.format(junto, inverso))
+if inverso == junto:
+    print('Temos um políndromo!')
+else:
+    print('A frase digitada não é um políndromo!')
+'''
+
+# OU (outra solução de Gustavo Guanabara)
+'''
+frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = junto[::-1]
+print('O inverso de {} é {}'.format(junto, inverso))
+if inverso == junto:
     print('Temos um políndromo!')
 else:
     print('A frase digitada não é um políndromo!')

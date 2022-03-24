@@ -19,4 +19,16 @@ for cont in range(1, 7):
     if num % 2 == 0:
         valores += 1
         soma += num
-print(f'A soma dos {vd}{valores}{l} valores PARES é de {vd}{soma}{l}.')
+print(f'A soma dos {am}{valores}{l} valores {az}PARES{l} informados é de {vd}{soma}{l}.')
+
+# Solução Gustavo Guanabara:
+'''
+soma = 0
+cont = 0
+for c in range(1, 7):
+    num = int(input('Digite o {}º valor: '.format(c)))
+    if num % 2 == 0:
+        soma += num
+        cont += 1
+print('Você informou {} números PARES e a soma foi {}'.format(cont, soma))
+'''
