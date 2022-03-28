@@ -3,14 +3,18 @@ from math import trunc
 
 cores = {
     'limpar': '\033[m',
-    'amarel': '\033[0;33m',
+    'amarelo': '\033[0;33m',
     'azul': '\033[0;34m',
     'roxo': '\033[0;35m'
 }
+li = cores['limpar']
+am = cores['amarelo']
+az = cores['azul']
+rx = cores['roxo']
 
-num = float(input('{}Digite um número: {}'.format(cores['roxo'], cores['limpar'])))
+num = float(input('{}Digite um número: {}'.format(rx, li)))
 inteiro = trunc(num)
-print('{}O número {}{}{}{} tem a parte inteira {}{}{}'.format(cores['azul'], cores['amarel'], num, cores['limpar'], cores['azul'], cores['amarel'], inteiro, cores['limpar']))
+print('{}O número {}{}{}{} tem a parte inteira {}{}{}'.format(az, am, num, li, az, am, inteiro, li))
 
 # Solução de Gustavo Guanabara
 '''

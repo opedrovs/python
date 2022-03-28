@@ -4,21 +4,21 @@ cores = {
     'amarelo': '\033[0;33m',
     'azul': '\033[0;34m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 am = cores['amarelo']
 az = cores['azul']
 
 # Minha solução após ver a resposta:
-print(f'{az}={l}'*28)
-print(f'{am}{"10 TERMOS DE UMA PA":^28}{l}')
-print(f'{az}={l}'*28)
+print(f'{az}={li}'*28)
+print(f'{am}{"10 TERMOS DE UMA PA":^28}{li}')
+print(f'{az}={li}'*28)
 pri = int(input('Primeiro termo: '))
 raz = int(input('Razão: '))
 dec = pri + (10 - 1) * raz
 for c in range(pri, dec + raz, raz):
-    print(f'{am}{c}{l}', end=' → ')
-print(f'{az}ACABOU{l}')
+    print(f'{am}{c}{li}', end=' → ')
+print(f'{az}ACABOU{li}')
 
 # Minha solução
 '''

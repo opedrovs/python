@@ -3,7 +3,7 @@ cores = {
     'amarelo': '\033[0;33m',
     'roxo': '\033[0;35m'
 }
-l = cores['limpar']
+li = cores['limpar']
 am = cores['amarelo']
 rx = cores['roxo']
 
@@ -14,10 +14,9 @@ for cont in range(1, 501, 2):
     if cont % 3 == 0:
         soma += cont
         valores += 1
-print(f'A soma de todos os {rx}{valores}{l} valores solicitados é {am}{soma}{l}')
+print(f'A soma de todos os {rx}{valores}{li} valores solicitados é {am}{soma}{li}')
 
 # Minha solução
-
 '''
 valores = 0
 soma = 0

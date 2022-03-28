@@ -6,7 +6,7 @@ cores = {
     'azul': '\033[0;34m',
     'roxo': '\033[0;35m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
@@ -26,8 +26,8 @@ for p in range(1, 6):
             maior = peso
         if peso < menor:
             menor = peso
-print(f'O {vd}maior{l} peso lido foi de {am}{maior:.1f}Kg{l}')
-print(f'O {vm}menor{l} peso lido foi de {am}{menor:.1f}Kg{l}')
+print(f'O {vd}maior{li} peso lido foi de {am}{maior:.1f}Kg{li}')
+print(f'O {vm}menor{li} peso lido foi de {am}{menor:.1f}Kg{li}')
 
 # Minha solução (Não a melhor forma)
 '''
@@ -36,13 +36,10 @@ menor = 9999999
 for cont in range(1, 6):
     peso = float(input(f'Peso da {cont}º pessoa: '))
     lista += [peso]
-
     if maior < peso:
         maior = peso
-
     if menor > peso:
         menor = peso
-
 print(f'O maior peso lido foi de {maior:.1f}Kg')
 print(f'O menor peso lido foi de {menor:.1f}Kg')
 '''

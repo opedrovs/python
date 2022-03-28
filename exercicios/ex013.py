@@ -7,16 +7,16 @@ cores = {
     'azul': '\033[0;34m'
 }
 
-l = cores['limpar']
+li = cores['limpar']
 verm = cores['vermel']
 verd = cores['verde']
 az = cores['azul']
 
 nome = input('Nome do funcionário: ')
-sal = float(input('Salário atual de {}{}{}, R$'.format(az, nome, l)))
+sal = float(input('Salário atual de {}{}{}, {}R${}'.format(az, nome, li, verd, li)))
 porcen = (sal / 100) * 15
 aumento = porcen + sal
-print('O salário de {}{}{} era de {}R${:.2f}{}, agora com o aumento de 15%, passará a ganhar {}R${:.2f}{}.'.format(az, nome, l, verm, sal, l, verd, aumento, l))
+print('O salário de {}{}{} era de {}R${:.2f}{}, agora com o aumento de 15%, passará a ganhar {}R${:.2f}{}.'.format(az, nome, li, verm, sal, li, verd, aumento, li))
 
 # Solução Gustavo Guanabara CursoemVideo
 # salário = float(input('Qual é o salário do Funcionário? R$'))

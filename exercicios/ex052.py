@@ -5,7 +5,7 @@ cores = {
     'amarelo': '\033[0;33m',
     'verde': '\033[0;32m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 am = cores['amarelo']
 vd = cores['verde']
@@ -15,16 +15,16 @@ divisivel = 0
 primo = ''
 for cont in range(1, num+1):
     if num % cont == 0:
-        print(f'{am}{cont}{l}', end=' ')
+        print(f'{am}{cont}{li}', end=' ')
         divisivel += 1
         if divisivel == 2:
             # Se o número é PRIMO
-            primo = f'{vd}É PRIMO{l}'
+            primo = f'{vd}É PRIMO{li}'
         else:
             # Se o número NÃO é PRIMO
-            primo = f'{vm}NÃO É PRIMO{l}'
+            primo = f'{vm}NÃO É PRIMO{li}'
     else:
-        print(f'{vm}{cont}{l}', end=' ')
+        print(f'{vm}{cont}{li}', end=' ')
 print(f'\nO número {num} foi divisível {divisivel} vezes')
 print(f'E por isso ele {primo}!')
 

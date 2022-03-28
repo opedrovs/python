@@ -10,17 +10,17 @@ cores = {
     'azul': '\033[0;34m'
 }
 
-l = cores['limpar']
+li = cores['limpar']
 v = cores['verde']
 am = cores['amarelo']
 az = cores['azul']
 
-cotacao = float(input('Antes de mais nada, quanto está a cotação do Dólar? {}US${}'.format(az, l)))
+cotacao = float(input('Antes de mais nada, quanto está a cotação do Dólar? {}US${}'.format(az, li)))
 # cotacaoeuro = float(input('Antes de mais nada, quanto está a cotação do Euro? €'))
-real = float(input('Quantos R$ você tem na carteira? {}R${}'.format(v, l)))
+real = float(input('Quantos R$ você tem na carteira? {}R${}'.format(v, li)))
 dolar = real / cotacao
 # euro = real / cotacaoeuro
-print('Com {}R${:.2f}{} você pode comprar {}US${:.2f}{}!'.format(v, real, l, az, dolar, l))
+print('Com {}R${:.2f}{} você pode comprar {}US${:.2f}{}!'.format(v, real, li, az, dolar, li))
 # print('Com R${:.2f} você pode comprar €{:.2f}!'.format(real, euro))
 
 # Solução Gustavo Guanabara (CursoemVideo)

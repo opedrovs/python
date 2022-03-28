@@ -2,7 +2,7 @@
 cores = {
     'limpa': '\033[m',
     'verde': '\033[0;32m',
-    'amarel': '\033[0;33m'
+    'amarelo': '\033[0;33m'
 }
 dis = float(input('Qual é a distância da sua viagem? '))
 if dis >= 200:
@@ -10,7 +10,7 @@ if dis >= 200:
 else:
     preco = dis * 0.50
 print('{}Você está prestes a começar uma viagem de {}Km.'.format(cores['verde'], dis))
-print('E o preço da sua passagem será de {}R${:.2f}'.format(cores['amarel'], preco))
+print('E o preço da sua passagem será de {}R${:.2f}'.format(cores['amarelo'], preco))
 
 # Solução Gustavo Guanabara
 '''

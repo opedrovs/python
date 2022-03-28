@@ -6,7 +6,7 @@ cores = {
     'azul': '\033[0;34m'
 }
 
-l = cores['limpar']
+li = cores['limpar']
 v = cores['verde']
 am = cores['amarelo']
 az = cores['azul']

@@ -1,19 +1,23 @@
 # Minha solução
 cores = {
-    'limpa': '\033[m',
-    'vermel': '\033[0;31m',
+    'limpar': '\033[m',
+    'vermelho': '\033[0;31m',
     'verde': '\033[0;32m',
     'roxo': '\033[0;35m'
 }
+li = cores['limpar']
+vm = cores['vermelho']
+vd = cores['verde']
+rx = cores['roxo']
 
-sal = float(input('{}Qual é o salário do funcionário? R${}'.format(cores['roxo'], cores['limpa'])))
+sal = float(input('{}Qual é o salário do funcionário? {}R${}'.format(rx, vd, li)))
 if sal >= 1250:
     # Novo salário com 10% de aumento
     aumento = sal + (sal * 10) / 100
 else:
     # Novo salário com 15% de aumento
     aumento = sal + (sal * 15) / 100
-print('Quem ganhava {}R${:.2f}{} passa a ganhar {}R${:.2f}{} agora.'.format(cores['vermel'], sal, cores['limpa'], cores['verde'], aumento, cores['limpa']))
+print('Quem ganhava {}R${:.2f}{} passa a ganhar {}R${:.2f}{} agora.'.format(vm, sal, li, vd, aumento, li))
 
 # Solução Gustavo Guanabara
 '''

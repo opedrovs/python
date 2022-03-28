@@ -1,4 +1,3 @@
-# Minha solução
 cores = {
     'limpar': '\033[m',
     'vermelho': '\033[0;31m',
@@ -6,27 +5,26 @@ cores = {
     'amarelo': '\033[0;33m',
     'azul': '\033[0;34m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
 az = cores['azul']
 
-a = float(input(f'{az}Primeiro segmento:{l} '))
-b = float(input(f'{az}Segundo segmento:{l} '))
-c = float(input(f'{az}Terceiro segmento:{l} '))
+# Minha solução
+a = float(input(f'{az}Primeiro segmento:{li} '))
+b = float(input(f'{az}Segundo segmento:{li} '))
+c = float(input(f'{az}Terceiro segmento:{li} '))
 if a < b + c and b < a + c and c < a + b:
     if a == b == c:
         forma = 'EQUILÁTERO'
-        print(f'{vd}Os segmentos acima {am}PODEM FORMAR{vd} um triângulo {am}{forma}{vd}!{l}')
     elif a == b or a == c or b == c:
         forma = 'ISÓSCELES'
-        print(f'{vd}Os segmentos acima {am}PODEM FORMAR{vd} um triângulo {am}{forma}{vd}!{l}')
     else:
         forma = 'ESCALENO'
-        print(f'{vd}Os segmentos acima {am}PODEM FORMAR{vd} um triângulo {am}{forma}{vd}!{l}')
+    print(f'{vd}Os segmentos acima {am}PODEM FORMAR{vd} um triângulo {am}{forma}{vd}!{li}')
 else:
-    print(f'{vm}Os segmentos acima {am}NÃO PODEM FORMAR{vm} triângulo!{l}')
+    print(f'{vm}Os segmentos acima {am}NÃO PODEM FORMAR{vm} triângulo!{li}')
 
 # Solução Gustavo Guanabara
 '''

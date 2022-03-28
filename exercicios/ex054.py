@@ -5,7 +5,7 @@ cores = {
     'amarelo': '\033[0;33m',
     'azul': '\033[0;34m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
@@ -17,14 +17,14 @@ atual = date.today().year
 maior = 0
 menor = 0
 for cont in range(1, 8):
-    nasc = int(input(f'{az}Em que ano a {am}{cont}º{az} pessoa nasceu?{l} '))
+    nasc = int(input(f'{az}Em que ano a {am}{cont}º{az} pessoa nasceu?{li} '))
     idade = atual - nasc
     if idade >= 21:
         maior += 1
     else:
         menor += 1
-print(f'Ao todo tivemos {am}{maior}{l} pessoas {vd}maiores{l} de idade')
-print(f'E também tivemos {am}{menor}{l} pessoas {vm}menores{l} de idade')
+print(f'Ao todo tivemos {am}{maior}{li} pessoas {vd}maiores{li} de idade')
+print(f'E também tivemos {am}{menor}{li} pessoas {vm}menores{li} de idade')
 
 # Solução Gustavo Guanabara
 '''

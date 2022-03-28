@@ -1,18 +1,19 @@
 from datetime import date
-# Minha solução
+
 cores = {
     'limpar': '\033[m',
     'verde': '\033[0;32m',
     'amarelo': '\033[0;33m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vd = cores['verde']
 am = cores['amarelo']
 
+# Minha solução
 anoatual = date.today().year
 ano = int(input('Ano de Nascimento: ').strip())
 idade = anoatual - ano
-print(f'O atleta tem {vd}{idade} anos{l}.')
+print(f'O atleta tem {vd}{idade} anos{li}.')
 if idade <= 9:
     classif = 'MIRIM'
 elif idade <= 14:
@@ -23,7 +24,7 @@ elif idade <= 25:
     classif = 'SÊNIOR'
 else:
     classif = 'MASTER'
-print(f'Classificação: {am}{classif}{l}')
+print(f'Classificação: {am}{classif}{li}')
 
 # Solução Gustavo Guanabara
 '''

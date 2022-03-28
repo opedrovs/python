@@ -9,5 +9,5 @@ pygame.init()
 pygame.mixer.music.load('ex021.mp3')
 pygame.mixer.music.play()
 pygame.event.wait()
-input('Música da série: Bojack Horseman.')
+input('Música da série: Bojack Horseman')
 '''

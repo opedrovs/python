@@ -1,31 +1,31 @@
-# Minha solução
 cores = {
     'limpar': '\033[m',
     'vermelho': '\033[0;31m',
     'verde': '\033[0;32m',
     'amarelo': '\033[0;33m',
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
 
+# Minha solução
 nota1 = float(input('Primeira nota: '))
 nota2 = float(input('Segunda nota: '))
 media = (nota1 + nota2) / 2
 print(f'Tirando {nota1:.1f} e {nota2:.1f}, a média do aluno é {media:.1f}')
 if nota1 > 10 or nota2 > 10 and nota1 < 0 or nota2 < 0:
     # ERRO: Se a nota for abaixo de 0 e acima de 10.
-    print(f'{vm}Nota inválida!{l} Não aceitamos notas menores que 0 e maiores que 10.')
+    print(f'{vm}Nota inválida!{li} Não aceitamos notas menores que 0 e maiores que 10.')
 elif media >= 7:
     # Caso aluno tire acima de 7 (APROVADO)
-    print(f'O aluno está {vd}APROVADO{l}.')
+    print(f'O aluno está {vd}APROVADO{li}.')
 elif media >= 5:
     # Caso aluno tire entre 5 e 6.9 (RECUPERAÇÃO)
-    print(f'O aluno está em {am}RECUPERAÇÃO{l}.')
+    print(f'O aluno está em {am}RECUPERAÇÃO{li}.')
 else:
     # Caso aluno tire abaixo que 5 (REPROVADO)
-    print(f'O aluno está {vm}REPROVADO{l}.')
+    print(f'O aluno está {vm}REPROVADO{li}.')
 
 # OU
 

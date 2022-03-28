@@ -4,7 +4,7 @@ cores = {
     'verde': '\033[0;32m',
     'amarelo': '\033[0;33m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
@@ -14,13 +14,13 @@ import emoji
 from time import sleep
 for c in range(10, -1, -1):
     if c >= 7:
-        print(f'{vd}{c}{l}')
+        print(f'{vd}{c}{li}')
     elif c >= 3:
-        print(f'{am}{c}{l}')
+        print(f'{am}{c}{li}')
     else:
-        print(f'{vm}{c}{l}')
+        print(f'{vm}{c}{li}')
     sleep(0.8)
-print(emoji.emojize(f'{vm}BUM! {am}BUM! {vm}POOOW! :fireworks:{l}', use_aliases=True))
+print(emoji.emojize(f'{vm}BUM! {am}BUM! {vm}POOOW! :fireworks:{li}', use_aliases=True))
 
 # Solução Gustavo Guanabara:
 '''

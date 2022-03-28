@@ -5,7 +5,7 @@ cores = {
     'amarelo': '\033[0;33m',
     'azul': '\033[0;34m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
@@ -18,25 +18,24 @@ junto = ''.join(palavras)
 inverso = ''
 for letra in range(len(junto) - 1, -1, -1):
     inverso += junto[letra]
-print(f'O inverso de {junto} é {az}{inverso}{l}')
+print(f'O inverso de {junto} é {az}{inverso}{li}')
 if inverso == junto:
-    print(f'{vd}Temos um {am}políndromo{vd}!{l}')
+    print(f'{vd}Temos um {am}políndromo{vd}!{li}')
 else:
-    print(f'{vm}A frase digitada não é um {am}políndromo{vm}!{l}')
+    print(f'{vm}A frase digitada não é um {am}políndromo{vm}!{li}')
 
 # Minha solução (com laço de repetição):
 '''
 frase = str(input('Digite uma frase: ')).upper().strip()
 separado = frase.split()
 junto = ''.join(separado)
-
 for cont in range(len(junto), 0, -1):
     inverso = junto[::-cont]
-print(f'O inverso de {junto} é {az}{inverso}{l}')
+print(f'O inverso de {junto} é {az}{inverso}{li}')
 if junto == inverso:
-    print(f'{vd}Temos um {am}políndromo{vd}!{l}')
+    print(f'{vd}Temos um {am}políndromo{vd}!{li}')
 else:
-    print(f'{vm}A frase digitada não é um {am}políndromo{vm}!{l}')
+    print(f'{vm}A frase digitada não é um {am}políndromo{vm}!{li}')
 '''
 
 # Minha solução (sem laço de repetição):

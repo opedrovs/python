@@ -1,9 +1,10 @@
-# Minha solução (Jeito errado pois só reconhece 4 algarismos!)
 cores = {
     'limpar': '\033[m',
     'amarelo': '\033[0;33m',
 
 }
+
+# Minha solução (Jeito ERRADO pois só reconhece 4 algarismos!)
 '''
 num = str(input('Informe um número: '))
 print('Unidade: {}'.format(num[3]))

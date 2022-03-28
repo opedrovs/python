@@ -1,13 +1,20 @@
 # Minha solução
 cores = {
-    'limpa': '\033[m',
+    'limpar': '\033[m',
     'verde': '\033[0;32m',
-    'vermel': '\033[0;31m',
-    'amarelo': '\033[0;33m'
+    'vermelho': '\033[0;31m',
+    'amarelo': '\033[0;33m',
+    'roxo': '\033[0;35m'
 }
-p = int(input('Primeiro valor: '))
-s = int(input('Segundo valor: '))
-t = int(input('Terceiro valor: '))
+li = cores['limpar']
+vd = cores['verde']
+vm = cores['vermelho']
+am = cores['amarelo']
+rx = cores['roxo']
+
+p = int(input('{}Primeiro valor:{} '.format(rx, li)))
+s = int(input('{}Segundo valor:{} '.format(rx, li)))
+t = int(input('{}Terceiro valor:{} '.format(rx, li)))
 
 # Verificando o maior valor:
 if p > s and p > t:
@@ -25,8 +32,8 @@ elif s < p and s < t:
 elif t < p and t < s:
     menor = t
 
-print('O {}menor{} valor informado foi {}{}{}'.format(cores['vermel'], cores['limpa'], cores['amarelo'], menor, cores['limpa']))
-print('O {}maior{} valor informado foi {}{}{}'.format(cores['verde'], cores['limpa'], cores['amarelo'], maior, cores['limpa']))
+print('O {}menor{} valor informado foi {}{}{}'.format(vm, li, am, menor, li))
+print('O {}maior{} valor informado foi {}{}{}'.format(vd, li, am, maior, li))
 
 # Solução Gustavo Guanabara
 '''

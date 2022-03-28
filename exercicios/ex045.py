@@ -1,6 +1,6 @@
 from random import choice, randint
 from time import sleep
-# Minha solução
+
 cores = {
     'limpar': '\033[m',
     'vermelho': '\033[0;31m',
@@ -9,7 +9,7 @@ cores = {
     'azul': '\033[0;34m',
     'roxo': '\033[0;35m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
@@ -19,9 +19,9 @@ rx = cores['roxo']
 # Minha solução após ver a resposta:
 
 print(f'''Suas opções:
-[ {rx}0{l} ] PEDRA
-[ {rx}1{l} ] PAPEL
-[ {rx}2{l} ] TESOURA''')
+[ {rx}0{li} ] PEDRA
+[ {rx}1{li} ] PAPEL
+[ {rx}2{li} ] TESOURA''')
 itens = ('Pedra', 'Papel', 'Tesoura')
 jogador = int(input('Qual é a sua jogada? '))
 computador = randint(0, 2)
@@ -31,40 +31,40 @@ print('KEN')
 sleep(1)
 print('PO!!!')
 if jogador < 0 or jogador >= 3:
-    print(f'{vm}JOGADA INVÁLIDA!{l}')
+    print(f'{vm}JOGADA INVÁLIDA!{li}')
 elif computador == 0:
     print('-=' * 11)
-    print(f'Computador jogou {am}{itens[computador]}{l}')
-    print(f'Jogador jogou {am}{itens[jogador]}{l}')
+    print(f'Computador jogou {am}{itens[computador]}{li}')
+    print(f'Jogador jogou {am}{itens[jogador]}{li}')
     print('-=' * 11)
     if jogador == 0:
-        print(f'{am}EMPATE{l}')
+        print(f'{am}EMPATE{li}')
     elif jogador == 1:
-        print(f'{vd}VENCE JOGADOR{l}')
+        print(f'{vd}VENCE JOGADOR{li}')
     elif jogador == 2:
-        print(f'{vm}VENCE COMPUTADOR{l}')
+        print(f'{vm}VENCE COMPUTADOR{li}')
 elif computador == 1:
     print('-=' * 11)
-    print(f'Computador jogou {am}{itens[computador]}{l}')
-    print(f'Jogador jogou {am}{itens[jogador]}{l}')
+    print(f'Computador jogou {am}{itens[computador]}{li}')
+    print(f'Jogador jogou {am}{itens[jogador]}{li}')
     print('-=' * 11)
     if jogador == 0:
-        print(f'{vm}VENCE COMPUTADOR{l}')
+        print(f'{vm}VENCE COMPUTADOR{li}')
     elif jogador == 1:
-        print(f'{am}EMPATE{l}')
+        print(f'{am}EMPATE{li}')
     elif jogador == 2:
-        print(f'{vd}VENCE JOGADOR{l}')
+        print(f'{vd}VENCE JOGADOR{li}')
 elif computador == 2:
     print('-=' * 11)
-    print(f'Computador jogou {am}{itens[computador]}{l}')
-    print(f'Jogador jogou {am}{itens[jogador]}{l}')
+    print(f'Computador jogou {am}{itens[computador]}{li}')
+    print(f'Jogador jogou {am}{itens[jogador]}{li}')
     print('-=' * 11)
     if jogador == 0:
-        print(f'{vd}VENCE JOGADOR{l}')
+        print(f'{vd}VENCE JOGADOR{li}')
     elif jogador == 1:
-        print(f'{vm}VENCE COMPUTADOR{l}')
+        print(f'{vm}VENCE COMPUTADOR{li}')
     elif jogador == 2:
-        print(f'{am}EMPATE{l}')
+        print(f'{am}EMPATE{li}')
 
 # Minha primeira solução (sem ver a resposta)
 

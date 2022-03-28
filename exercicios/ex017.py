@@ -1,10 +1,17 @@
+cores = {
+    'limpar': '\033[m',
+    'amarelo': '\033[0;33m'
+}
+li = cores['limpar']
+am = cores['amarelo']
+
 # Minha solução (tive dificuldade)
 from math import sqrt, hypot
 co = float(input('Comprimento do cateto oposto: '))
 ca = float(input('Comprimento do cateto adjacente: '))
 # hi = sqrt(co ** 2 + ca ** 2)
 hi = hypot(co, ca)
-print('A hipotenusa vai medir {:.2f}'.format(hi))
+print('A hipotenusa vai medir {}{:.2f}{}'.format(am, hi, li))
 
 # Solução Gustavo Guanabara
 

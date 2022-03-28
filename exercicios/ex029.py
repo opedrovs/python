@@ -1,18 +1,22 @@
 # Minha solução
 cores = {
-    'limpa': '\033[m',
+    'limpar': '\033[m',
     'verde': '\033[0;32m',
-    'vermel': '\033[0;31m',
+    'vermelho': '\033[0;31m',
     'amarelo': '\033[0;33m'
 }
+li = cores['limpar']
+vd = cores['verde']
+vm = cores['vermelho']
+am = cores['amarelo']
+
 vel = float(input('Qual é a velocidade atual do carro? '))
 # Calculo de multa
 if vel > 80:
-    print('{}MULTADO! Você excedeu o limite permitido que é de 80Km/h'.format(cores['vermel']))
+    print('{}MULTADO! Você excedeu o limite permitido que é de 80Km/h'.format(vm))
     multa = (vel - 80) * 7
-    print('Você deve pagar uma multa de {}R${:.2f}!{}'.format(cores['amarelo'], multa, cores['limpa']))
-
-print('{}Tenha um bom dia! Dirija com segurança!{}'.format(cores['verde'], cores['limpa']))
+    print('Você deve pagar uma multa de {}R${:.2f}!{}'.format(am, multa, li))
+print('{}Tenha um bom dia! Dirija com segurança!{}'.format(vd, li))
 
 # Solução Gustavo Guanabara
 '''

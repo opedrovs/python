@@ -5,7 +5,7 @@ cores = {
     'amarelo': '\033[0;33m',
     'azul': '\033[0;34m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
@@ -20,7 +20,7 @@ velhonome = '-'
 listamulheres = []
 totalm = 0
 for cont in range(1, 5):
-    print(f'{am}{f" {az}{cont}º PESSOA{am} ":-^35}{l}')
+    print(f'{am}{f" {az}{cont}º PESSOA{am} ":-^35}{li}')
     nome = str(input('Nome: ')).strip()
     idade = int(input('Idade: '))
     sexo = str(input('Sexo [M/F]: ')).strip().upper()
@@ -41,15 +41,15 @@ for cont in range(1, 5):
     else:
         # Sexo inválido!
         print('[ERRO] Sexo inválido. Desconsiderado!')
-print(f'A média de idade do grupo é de {az}{media:.1f} anos{l}')
+print(f'A média de idade do grupo é de {az}{media:.1f} anos{li}')
 if velhoidade == 0:
     pass
 else:
-    print(f'O homem {vd}mais{l} velho tem {am}{velhoidade} anos{l} e se chama {am}{velhonome}{l}.')
+    print(f'O homem mais velho tem {vd}{velhoidade} anos{li} e se chama {vd}{velhonome}{li}.')
 if totalm == 0:
     pass
 else:
-    print(f'Ao todo são {am}{totalm} mulheres{l} com {vm}menos{l} de 20 anos.')
+    print(f'Ao todo são {am}{totalm} mulheres{li} com menos de 20 anos.')
 
 # Solução Gustavo Guanabara:
 '''

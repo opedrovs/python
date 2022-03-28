@@ -5,7 +5,7 @@ cores = {
     'verde': '\033[0;32m',
     'amarelo': '\033[0;33m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
@@ -14,11 +14,11 @@ casa = float(input('Valor da casa: R$'))
 sal = float(input('Salário do comprador: R$'))
 anos = int(input('Quantos anos de financiamento? '))
 mensal = casa / (anos * 12)
-print(f'Para pagar uma casa de {vm}R${casa:.2f}{l} em {am}{anos} anos{l} a prestação será de {vd}R${mensal:.2f}{l}')
+print(f'Para pagar uma casa de {vm}R${casa:.2f}{li} em {am}{anos} anos{li} a prestação será de {vd}R${mensal:.2f}{li}')
 if mensal <= (sal * 30 / 100):
-    print(f'Empréstimo pode ser {vd}CONCEDIDO{l}!')
+    print(f'{vd}Empréstimo pode ser {am}CONCEDIDO{vd}!{li}')
 else:
-    print(f'Empréstimo {vm}NEGADO{l}!')
+    print(f'{vm}Empréstimo {am}NEGADO{vm}!{li}')
 
 # Solução Gustavo Guanabara
 '''

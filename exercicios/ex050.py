@@ -5,7 +5,7 @@ cores = {
     'azul': '\033[0;34m',
     'roxo': '\033[0;35m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vd = cores['verde']
 am = cores['amarelo']
 az = cores['azul']
@@ -15,11 +15,11 @@ rx = cores['roxo']
 valores = 0
 soma = 0
 for cont in range(1, 7):
-    num = int(input(f'{rx}Digite o {am}{cont}º{rx} valor:{l} '))
+    num = int(input(f'{rx}Digite o {am}{cont}º{rx} valor:{li} '))
     if num % 2 == 0:
         valores += 1
         soma += num
-print(f'A soma dos {am}{valores}{l} valores {az}PARES{l} informados é de {vd}{soma}{l}.')
+print(f'A soma dos {am}{valores}{li} valores {az}PARES{li} informados é de {vd}{soma}{li}.')
 
 # Solução Gustavo Guanabara:
 '''

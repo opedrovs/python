@@ -3,16 +3,16 @@ cores = {
     'amarelo': '\033[0;33m',
     'vermelho': '\033[0;31m'
 }
-l = cores['limpar']
+li = cores['limpar']
 am = cores['amarelo']
 vm = cores['vermelho']
 
 # Minha solução após ver a resposta:
-
+# ** Melhor solução por gastar menos memória e tirar carga do processador (deixa o programa mais rápido e leve)
 print('Contagem de 1 a 50, considerando apenas os PARES')
 for cont in range(2, 51, 2):
-    print(f'{am}{cont}{l}', end=' ')
-print(f'{vm}Acabou{l}')
+    print(f'{am}{cont}{li}', end=' ')
+print(f'{vm}Acabou{li}')
 
 # Minha solução
 '''

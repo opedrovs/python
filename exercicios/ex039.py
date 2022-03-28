@@ -1,5 +1,5 @@
-# Minha solução
 from datetime import date
+
 cores = {
     'limpar': '\033[m',
     'vermelho': '\033[0;31m',
@@ -7,24 +7,25 @@ cores = {
     'amarelo': '\033[0;33m',
     'roxo': '\033[0;35m'
 }
-l = cores['limpar']
+li = cores['limpar']
 vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
 rx = cores['roxo']
 
+# Minha solução
 anoatual = date.today().year
 nasc = int(input('Ano de nascimento: '))
 idade = anoatual - nasc
-print(f'Quem nasceu em {am}{nasc}{l} tem {am}{idade} anos {l}em {rx}{anoatual}{l}.')
+print(f'Quem nasceu em {am}{nasc}{li} tem {am}{idade} anos {li}em {rx}{anoatual}{li}.')
 if idade < 18:
-    print(f'Ainda faltam {vd}{18-idade} anos {l}para o alistamento')
-    print(f'Seu alistamento será em {vm}{anoatual+(18-idade)}{l}.')
+    print(f'Ainda faltam {vd}{18-idade} anos {li}para o alistamento')
+    print(f'Seu alistamento será em {vm}{anoatual+(18-idade)}{li}.')
 elif idade == 18:
-    print(f'Você tem que se alistar {vm}IMEDIATAMENTE!{l}')
+    print(f'Você tem que se alistar {vm}IMEDIATAMENTE!{li}')
 else:
-    print(f'Você já deveria ter se alistado há {vm}{idade-18} anos{l}.')
-    print(f'Seu alistamento foi em {vd}{anoatual-(idade-18)}{l}.')
+    print(f'Você já deveria ter se alistado há {vm}{idade-18} anos{li}.')
+    print(f'Seu alistamento foi em {vd}{anoatual-(idade-18)}{li}.')
 
 # Solução Gustavo Guanabara
 '''

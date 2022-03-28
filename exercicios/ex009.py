@@ -7,23 +7,23 @@ cores = {
     'azul': '\033[0;34m'
 }
 
-l = cores['limpar']
+li = cores['limpar']
 am = cores['amarelo']
 az = cores['azul']
 
 num = int(input('Digite um número: '))
-print('{}={}'.format(az, l) * 11)
-print('{} x {:2} = {}{}{}'.format(num, 1, am, num*1, l))
-print('{} x {:2} = {}{}{}'.format(num, 2, am, num*2, l))
-print('{} x {:2} = {}{}{}'.format(num, 3, am, num*3, l))
-print('{} x {:2} = {}{}{}'.format(num, 4, am, num*4, l))
-print('{} x {:2} = {}{}{}'.format(num, 5, am, num*5, l))
-print('{} x {:2} = {}{}{}'.format(num, 6, am, num*6, l))
-print('{} x {:2} = {}{}{}'.format(num, 7, am, num*7, l))
-print('{} x {:2} = {}{}{}'.format(num, 8, am, num*8, l))
-print('{} x {:2} = {}{}{}'.format(num, 9, am, num*9, l))
-print('{} x {:2} = {}{}{}'.format(num, 10, am, num*1, l))
-print('{}={}'.format(az, l) * 11)
+print('{}={}'.format(az, li) * 11)
+print('{} x {:2} = {}{}{}'.format(num, 1, am, num*1, li))
+print('{} x {:2} = {}{}{}'.format(num, 2, am, num*2, li))
+print('{} x {:2} = {}{}{}'.format(num, 3, am, num*3, li))
+print('{} x {:2} = {}{}{}'.format(num, 4, am, num*4, li))
+print('{} x {:2} = {}{}{}'.format(num, 5, am, num*5, li))
+print('{} x {:2} = {}{}{}'.format(num, 6, am, num*6, li))
+print('{} x {:2} = {}{}{}'.format(num, 7, am, num*7, li))
+print('{} x {:2} = {}{}{}'.format(num, 8, am, num*8, li))
+print('{} x {:2} = {}{}{}'.format(num, 9, am, num*9, li))
+print('{} x {:2} = {}{}{}'.format(num, 10, am, num*1, li))
+print('{}={}'.format(az, li) * 11)
 
 # Minha segunda solução
 
