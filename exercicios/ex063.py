@@ -1,19 +1,18 @@
-# AINDA FAZENDO
-print('-'*28)
+# Solução feita com ajuda dos comentários:
+print('-'*30)
 print('Sequência de Fibonacci')
-print('-'*28)
+print('-'*30)
 termo = int(input('Quantos termos você quer mostrar? '))
-print('='*28)
-cont = 0
-calc = 0
-i = 0
-i2 = 1
-soma = 0
-while cont < termo:
-    soma += i + i2
-    print(f'{soma}', end=' → ')
-    i += 1
-    i2 += 1
+print('~'*30)
+cont = 1
+anterior = 0
+proxima = 1
+soma = 1
+while cont <= termo:
+    print(anterior, end=' → ')
     cont += 1
+    soma = proxima + anterior
+    anterior = proxima
+    proxima = soma
 print('FIM')
-print('='*28)
+print('~'*30)

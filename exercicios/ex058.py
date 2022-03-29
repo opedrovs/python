@@ -20,7 +20,7 @@ print('Será que você consegue adivinhar qual foi?')
 palpite = ''
 tentativa = 0
 while pensei != palpite:
-    palpite = int(input(f'{rx}Qual é seu palpite?{l} '))
+    palpite = int(input(f'{rx}Qual é seu palpite?{li} '))
     if pensei > palpite:
         tentativa += 1
         print(f'{vd}Mais{li}... Tente mais uma vez.')
