@@ -12,6 +12,27 @@ vd = cores['verde']
 am = cores['amarelo']
 rx = cores['roxo']
 
+# Minha solução após ver a resposta:
+computador = randint(0, 10)
+print('Sou seu computador... \nAcabei de pensar em um número entre 0 e 10.')
+print('Será que você consegue adivinhar qual foi?')
+acertou = False
+palpites = 0
+while not acertou:
+    jogador = int(input('Qual é seu palpite? '))
+    palpites += 1
+    if jogador == computador:
+        acertou = True
+    else:
+        if jogador > computador:
+            print(f'{vm}Menos{li}... Tente mais uma vez.')
+        elif jogador < computador:
+            print(f'{vd}Mais{li}... Tente mais uma vez.')
+if palpites > 1:
+    print(f'Acertou com {am}{palpites}{li} tentativas. Parabéns!')
+else:
+    print(f'Acertou com {am}{palpites}{li} tentativa. Parabéns!')
+
 # Minha solução
 '''
 print('Sou seu computador...')
@@ -32,8 +53,9 @@ while pensei != palpite:
 '''
 
 # Solução Gustavo Guanabara
+'''
 computador = randint(0, 10)
-print('Sou seu computador... Acabei d epensar em um número entre 0 e 10.')
+print('Sou seu computador... Acabei de pensar em um número entre 0 e 10.')
 print('Será que você consegue adivinhar qual foi?')
 acertou = False
 palpites = 0
@@ -48,3 +70,4 @@ while not acertou:
         elif jogador > computador:
             print('Menos... Tente mais uma vez.')
 print('Acertou com {} tentativas. Parabéns!'.format(palpites))
+'''

@@ -19,15 +19,21 @@ totnum = 0
 somanum = 0
 media = 0
 lista = []
+menor = maior = 0
 while contin == 'S':
     num = int(input(f'Digite um número: '))
     contin = str(input(f'Quer continuar? [{vd}S{li}/{vm}N{li}] ')).upper().strip()
     totnum += 1
     somanum += num
     lista += [num]
+    maior = max(lista)
+    menor = min(lista)
 media = somanum / totnum
-print(f'Você digitou {az}{totnum}{li} números e a média foi {am}{media:.2f}{li}')
-print(f'O maior valor foi {vd}{max(lista)}{li} e o menor foi {vm}{min(lista)}{li}')
+if totnum == 1:
+    print(f'Você digitou {az}{totnum}{li} número e a média foi {am}{media:.2f}{li}')
+else:
+    print(f'Você digitou {az}{totnum}{li} números e a média foi {am}{media:.2f}{li}')
+print(f'O maior valor foi {vd}{maior}{li} e o menor foi {vm}{menor}{li}')
 
 # Solução Gustavo Guanabara
 '''

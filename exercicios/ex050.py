@@ -19,7 +19,10 @@ for cont in range(1, 7):
     if num % 2 == 0:
         valores += 1
         soma += num
-print(f'A soma dos {am}{valores}{li} valores {az}PARES{li} informados é de {vd}{soma}{li}.')
+if valores == 1:
+    print(f'A soma de {am}{valores}{li} valor {az}PAR{li} informado é de {vd}{soma}{li}.')
+else:
+    print(f'A soma dos {am}{valores}{li} valores {az}PARES{li} informados é de {vd}{soma}{li}.')
 
 # Solução Gustavo Guanabara:
 '''

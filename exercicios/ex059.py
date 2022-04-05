@@ -5,7 +5,7 @@ cores = {
     'verde': '\033[0;32m',
     'amarelo': '\033[0;33m',
     'azul': '\033[0;34m',
-    'roxo': '\033[0;35m',
+    'cinza': '\033[0;37m',
     'backgroundamarelo': '\033[7;33m'
 }
 li = cores['limpar']
@@ -13,7 +13,7 @@ vm = cores['vermelho']
 vd = cores['verde']
 am = cores['amarelo']
 az = cores['azul']
-rx = cores['roxo']
+cz = cores['cinza']
 bam = cores['backgroundamarelo']
 
 # Minha solução
@@ -29,7 +29,7 @@ while opcao != 5:
    {am}[ 5 ]{li} {az}sair do programa{li}''')
     opcao = int(input(f'>>>>> Qual é a sua opção? '))
     if opcao == 5:
-        print(f'{rx}Finalizando...{li}')
+        print(f'{cz}Finalizando...{li}')
         print('=-=' * 10)
         sleep(1.8)
     else:

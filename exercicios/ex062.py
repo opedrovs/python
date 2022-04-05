@@ -40,8 +40,8 @@ print(f'Progressão finalizada com {vd}{tottermo}{li} termos mostrados.')
 '''
 
 # Minha solução feito através da correção do ex061
-print('Gerador de PA')
-print('-=' * 12)
+print(f'{az}Gerador de PA')
+print(f'{am}-={li}' * 12)
 pri = int(input('Primeiro termo: '))
 raz = int(input('Razão da PA: '))
 termo = pri
@@ -49,16 +49,16 @@ cont = 1
 mais = 1
 tottermos = 0
 while cont <= 10 and mais != 0:
-    print(f'{termo} → ', end='')
+    print(f'{az}{termo}{li} → ', end='')
     termo += raz
     cont += 1
     tottermos += 1
     if cont > 10:
-        print('PAUSA')
+        print(f'{am}PAUSA{li}')
         mais = int(input('Quantos termos você quer mostrar a mais? '))
         if mais != 0:
             cont -= mais
-print(f'Progressão finalizada com {tottermos} termos mostrados.')
+print(f'Progressão finalizada com {vd}{tottermos}{li} termos mostrados.')
 
 # Solução Gustavo Guanabara
 '''

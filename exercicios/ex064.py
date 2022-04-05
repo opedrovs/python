@@ -20,7 +20,10 @@ while num != 999:
     if num != 999:
         soma += num
         totnum += 1
-print(f'Você digitou {rx}{totnum}{li} números e a soma entre eles foi {vd}{soma}{li}.')
+if totnum == 1:
+    print(f'Você digitou {rx}{totnum}{li} número e a soma entre ele foi {vd}{soma}{li}.')
+else:
+    print(f'Você digitou {rx}{totnum}{li} números e a soma entre eles foi {vd}{soma}{li}.')
 
 # Solução Gustavo Guanabara
 '''

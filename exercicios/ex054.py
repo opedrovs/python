@@ -23,8 +23,15 @@ for cont in range(1, 8):
         maior += 1
     else:
         menor += 1
-print(f'Ao todo tivemos {am}{maior}{li} pessoas {vd}maiores{li} de idade')
-print(f'E também tivemos {am}{menor}{li} pessoas {vm}menores{li} de idade')
+if maior == 1:
+    print(f'Ao todo tivemos {am}{maior}{li} pessoa {vd}maior{li} de idade')
+else:
+    print(f'Ao todo tivemos {am}{maior}{li} pessoas {vd}maiores{li} de idade')
+
+if menor == 1:
+    print(f'E também tivemos {am}{menor}{li} pessoa {vm}menor{li} de idade')
+else:
+    print(f'E também tivemos {am}{menor}{li} pessoas {vm}menores{li} de idade')
 
 # Solução Gustavo Guanabara
 '''
