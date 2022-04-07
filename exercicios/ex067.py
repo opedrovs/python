@@ -10,7 +10,6 @@ am = cores['amarelo']
 az = cores['azul']
 
 # Minha solução
-'''
 cont = 1
 while True:
     num = int(input(f'Quer ver a tabuada de qual valor? '))
@@ -21,7 +20,6 @@ while True:
         print(f'{am}{num} {az}x {cont:2} = {num*cont}{li}')
     print('-'*30)
 print(f'{vd}PROGRAMA TABUADA ENCERRADO. Volte sempre!{li}')
-'''
 
 # Solução Gustavo Guanabara
 '''
