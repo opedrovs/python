@@ -14,7 +14,7 @@ az = cores['azul']
 rx = cores['roxo']
 
 # Utilizando o Do. While
-totmais18 = tothomem = totmulher20 = 0
+totmaioridade = tothomem = totmulher20 = 0
 print(f'{"FIM DO PROGRAMA":=^31}')
 while True:
     print(f'{am}-{li}' * 27)
@@ -29,7 +29,7 @@ while True:
     while resp != 'S' and resp != 'N':
         resp = str(input(f'Quer continuar? [{vd}S{li}/{vm}N{li}] ')).upper().strip()[0]
     if idade > 18:
-        totmais18 += 1
+        totmaioridade += 1
     if sexo in 'Mm':
         tothomem += 1
     elif sexo in 'Ff':
@@ -38,7 +38,7 @@ while True:
     if resp == 'N':
         break
 print(f'{am}{f" {az}FIM DO PROGRAMA{am} ":=^43}{li}')
-print(f'Total de pessoas com mais de 18 anos: {vd}{totmais18}{li}')
+print(f'Total de pessoas com mais de 18 anos: {vd}{totmaioridade}{li}')
 if tothomem > 1:
     print(f'Ao todo temos {am}{tothomem}{li} homens cadastrados')
 else:
@@ -76,4 +76,28 @@ print(f'{" FIM DO PROGRAMA ":=^31}')
 print(f'Total de pessoas com mais de 18 anos: {totmais18}')
 print(f'Ao todo temos {tothomem} homens cadastrados')
 print(f'E temos {totmulher20} mulheres com menos de 20 anos')
+'''
+
+# Solução Gustavo Guanabara
+'''
+tot18 = totH = totM20 = 0
+while True:
+    idade = int(input('Idade: '))
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Sexo [M/F] ')).strip().upper()[0]
+    if idade >= 18:
+        tot18 += 1
+    if sexo == 'M':
+        totH += 1
+    if sexo == 'F' and idade < 20:
+        totM20 += 1
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    if resp == 'N':
+        break
+print(f'Total de pessoas com mais de 18 anos: {tot18}')
+print(f'Ao todo temos {totH} homens cadastrados')
+print(f'E temos {totM20} mulheres com menos de 20 anos')
 '''

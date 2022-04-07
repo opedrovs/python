@@ -19,7 +19,16 @@ while True:
         break
     valores += 1
     soma += num
-if valores > 1:
-    print(f'A soma dos {rx}{valores}{li} valores foi {vd}{soma}{li}!')
-else:
-    print(f'A soma de {rx}{valores}{li} valor foi {vd}{soma}{li}!')
+print(f'A soma dos {rx}{valores}{li} valores foi {vd}{soma}{li}!')
+
+# Solução Gustavo Guanabara
+'''
+soma = cont = 0
+while True:
+    num = int(input('Digite um valor (999 para parar): '))
+    if num == 999:
+        break
+    cont += 1
+    soma += num
+print(f'A soma dos {cont} valores foi {soma}!')
+'''
