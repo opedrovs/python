@@ -9,7 +9,38 @@ vd = cores['verde']
 am = cores['amarelo']
 az = cores['azul']
 
+# Minha outra solução (Cédulas de R$50, R$20, R$10, R$5 e R$1):
+print(f'{az}=' * 30)
+print(f'{am}{"BANCO CEV":^30}')
+print(f'{az}={li}' * 30)
+valor = int(input(f'Que valor você quer sacar? {vd}R${li}'))
+sacar = ced = valor
+while True:
+    if sacar // 50:
+        ced = sacar // 50
+        print(f'Total de {vd}{ced}{li} cédulas de R$50')
+        sacar %= 50
+    if sacar // 20:
+        ced = (sacar % 50) // 20
+        print(f'Total de {vd}{ced}{li} cédulas de R$20')
+        sacar %= 20
+    if sacar // 10:
+        ced = ((sacar % 50) % 20) // 10
+        print(f'Total de {vd}{ced}{li} cédulas de R$10')
+        sacar %= 10
+    if sacar // 5:
+        ced = (((sacar % 50) % 20) % 10) // 5
+        print(f'Total de {vd}{ced}{li} cédulas de R$5')
+        sacar %= 5
+    if sacar // 1:
+        ced = ((((sacar % 50) % 20) % 10) % 5) // 1
+        print(f'Total de {vd}{ced}{li} cédulas de R$1')
+    break
+print(f'{az}={li}' * 30)
+print('Volte sempre ao BANCO CEV! Tenha um bom dia!')
+
 # Minha solução
+'''
 print(f'{az}='*30)
 print(f'{am}{"BANCO CEV":^30}')
 print(f'{az}={li}'*30)
@@ -35,6 +66,7 @@ while True:
     break
 print(f'{az}={li}'*30)
 print('Volte sempre ao BANCO CEV! Tenha um bom dia!')
+'''
 
 # Solução Gustavo Guanabara
 '''

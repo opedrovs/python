@@ -33,4 +33,3 @@ print(c.index(5, 1)) # Você quer ver quantos 5 tem apartir da posição 1 (a po
 pessoa = ('Gustavo', 39, 'M', 99.88)
 del(pessoa) # APAGAR a memória (Apagar uma variável)
 print(pessoa)
-
