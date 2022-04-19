@@ -15,13 +15,32 @@ while True:
     valor = int(input('Digite um valor: '))
     if valor not in valores:
         valores.append(valor)
-        print('Valor adicionado com sucesso...')
+        print(f'Valor adicionado com sucesso...')
     else:
-        print('Valor duplicado! Não vou adicionar...')
+        print(f'Valor duplicado! Não vou adicionar...')
     resp = ' '
-    while resp not in 'SN':
+    while resp != 'S' and resp != 'N':
         resp = str(input(f'Quer continuar? [{vd}S{li}/{vm}N{li}] ')).strip().upper()
     if resp == 'N':
         break
 print('-=' * 30)
-print(f'Você digitou os valores {am}{sorted(valores)}{li}')
+valores.sort()
+print(f'Você digitou os valores {am}{valores}{li}')
+
+# Solução Gustavo Guanabara
+'''
+números = list()
+while True:
+    n = int(input('Digite um valor: '))
+    if n not in números:
+        números.append(n)
+        print('Valor adicionado com sucesso...')
+    else:
+        print('Valor duplicado! Não vou adicionar...')
+    r = str(input('Quer continuar? [S/N] '))
+    if r in 'Nn':
+        break
+print('-=' * 30)
+números.sort()
+print(f'Você digitou os valores {números}')
+'''
