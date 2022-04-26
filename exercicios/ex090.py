@@ -1,13 +1,26 @@
+cores = {
+    'limpar': '\033[m',
+    'vermelho': '\033[0;31m',
+    'verde': '\033[0;32m',
+    'amarelo': '\033[0;33m',
+    'azul': '\033[0;34m'
+}
+li = cores['limpar']
+vm = cores['vermelho']
+vd = cores['verde']
+am = cores['amarelo']
+az = cores['azul']
+
+# Minha solução
 cadastro = {}
 cadastro['nome'] = str(input('Nome: '))
 cadastro['média'] = float(input(f'Média de {cadastro["nome"]}: '))
 if cadastro['média'] >= 7:
-    cadastro['situação'] = 'Aprovado'
+    cadastro['situação'] = f'{vd}Aprovado{li}'
 elif cadastro['média'] >= 5:
-    cadastro['situação'] = 'Recuperação'
+    cadastro['situação'] = f'{am}Recuperação{li}'
 else:
-    cadastro['situação'] = 'Reprovado'
+    cadastro['situação'] = f'{vm}Reprovado{li}'
 print('-=' * 30)
 for chave, aluno in cadastro.items():
-    print(f'  - {chave} é igual a {aluno}')
-
+    print(f'  - {chave} é igual a {az}{aluno}{li}')

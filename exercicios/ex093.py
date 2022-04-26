@@ -1,3 +1,14 @@
+cores = {
+    'limpar': '\033[m',
+    'verde': '\033[0;32m',
+    'amarelo': '\033[0;33m',
+    'azul': '\033[0;34m'
+}
+li = cores['limpar']
+vd = cores['verde']
+am = cores['amarelo']
+az = cores['azul']
+
 cadastro = {}
 lgols = []
 tot = 0
@@ -13,9 +24,9 @@ print('-=' * 30)
 print(cadastro)
 print('-=' * 30)
 for chave, valor in cadastro.items():
-    print(f'O campo {chave} tem o valor {valor}')
+    print(f'O campo {az}{chave}{li} tem o valor {am}{valor}{li}')
 print('-=' * 30)
-print(f'O jogador {cadastro["nome"]} jogou {len(lgols)} partidas.')
+print(f'O jogador {am}{cadastro["nome"]}{li} jogou {az}{len(lgols)}{li} partidas.')
 for pos, gol in enumerate(lgols):
-    print(f'    => Na partida {pos}, fez {gol} gols.')
-print(f'Foi um total de {cadastro["total"]} gols.')
+    print(f'    => Na partida {az}{pos}{li}, fez {am}{gol}{li} gols.')
+print(f'Foi um total de {vd}{cadastro["total"]}{li} gols.')
