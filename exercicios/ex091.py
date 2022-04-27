@@ -11,7 +11,26 @@ vd = cores['verde']
 am = cores['amarelo']
 az = cores['azul']
 
-lista = []
+# Minha solução após ver a resposta
+from operator import itemgetter
+jogo = {'jogador1': randint(1, 6),
+        'jogador2': randint(1, 6),
+        'jogador3': randint(1, 6),
+        'jogador4': randint(1, 6)}
+ranking = list()
+print('Valores sorteados:')
+for chave, valor in jogo.items():
+    print(f'{chave} tirou {valor} no dado.')
+    sleep(1)
+ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
+print('-=' * 30)
+print('  == RANKING DOS JOGADORES ==')
+for pos, valor in enumerate(ranking):
+    print(f'   {pos+1}º lugar: {valor[0]} com {valor[1]}.')
+    sleep(1)
+
+# Minha solução
+'''lista = []
 valores = []
 jogadores = {'jogador1': randint(1, 6),
              'jogador2': randint(1, 6),
@@ -31,3 +50,22 @@ for chave, dado in jogadores.items():
 lista.sort(reverse=True)
 for pos, jogador in enumerate(lista):
     print(f'   {vd}{pos+1}º{li} lugar: {az}{jogador[1]}{li} com {am}{jogador[0]}{li}.')
+    sleep(1)'''
+
+# Solução Gustavo Guanabara
+'''from operator import itemgetter
+jogo = {'jogador1': randint(1, 6),
+        'jogador2': randint(1, 6),
+        'jogador3': randint(1, 6),
+        'jogador4': randint(1, 6)}
+ranking = list()
+print('Valores sorteados:')
+for k, v in jogo.items():
+    print(f'{k} tirou {v} no dado.')
+    sleep(1)
+ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
+print('-=' * 30)
+print('  == RANKING DOS JOGADORES ==')
+for i, v in enumerate(ranking):
+    print(f'   {i+1}º lugar: {v[0]} com {v[1]}.')
+    sleep(1)'''
