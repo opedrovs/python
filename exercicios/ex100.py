@@ -1,14 +1,26 @@
-# Minha solução
 from time import sleep
 from random import randint
+
+cores = {
+    'limpar': '\033[m',
+    'verde': '\033[0;32m',
+    'amarelo': '\033[0;33m',
+    'azul': '\033[0;34m'
+}
+li = cores['limpar']
+vd = cores['verde']
+am = cores['amarelo']
+az = cores['azul']
+
+# Minha solução
 
 
 def sorteia(valores):
     for cont in range(0, 5):
         valores.append(randint(1, 10))
-    print(f'Sorteando {len(valores)} valores da lista: ', end='')
+    print(f'Sorteando {az}{len(valores)}{li} valores da lista: ', end='')
     for valor in valores:
-        print(f'{valor} ', end='')
+        print(f'{am}{valor}{li} ', end='')
         sleep(0.3)
     print('PRONTO!')
 
@@ -18,7 +30,7 @@ def somaPar(valores):
     for valor in valores:
         if valor % 2 == 0:
             soma += valor
-    print(f'Somando os valores pares de {valores}, temos {soma}')
+    print(f'Somando os valores pares de {az}{valores}{li}, temos {vd}{soma}{li}')
 
 
 # Programa Principal
