@@ -68,6 +68,7 @@ print(s)'''
     #    print(f'{valor} ', end='')
     #print('FIM!')
 
+
 contador(2, 1, 7)
 contador(8, 0)
 contador(4, 4, 7, 6, 2)'''
@@ -76,7 +77,7 @@ contador(4, 4, 7, 6, 2)'''
 # Soma do Empacotamento
 
 
-def soma(* valores):
+'''def soma(* valores):
     s = 0
     for num in valores:
         s += num
@@ -84,7 +85,7 @@ def soma(* valores):
 
 
 soma(5, 2)
-soma(2, 9, 4)
+soma(2, 9, 4)'''
 
 # Usando listas em Função
 

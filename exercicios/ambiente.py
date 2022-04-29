@@ -9,6 +9,8 @@
 # print(input.__doc__)
 
 # Docstrings, criar sua própria
+
+
 '''def contador(i, f, p):
     """
         -> Faz uma contagem e mostra na tela.
