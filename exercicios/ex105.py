@@ -6,29 +6,29 @@ def notas(*n, sit=False):
     :param sit: valor opcional, indicando se deve ou não adicionar a situação
     :return: dicionário com várias informações sobre a situação da turma.
     """
-    resp = {}
-    soma = 0
-    for nota in n:
-        soma += nota
-    resp['total'] = len(n)
-    resp['maior'] = max(n)
-    resp['menor'] = min(n)
-    resp['média'] = soma / len(n)
+    dic = {}
+    dic['total'] = len(n)
+    dic['maior'] = max(n)
+    dic['menor'] = min(n)
+    dic['média'] = sum(n) / len(n)
     if sit:
-        if resp['média'] >= 7:
-            resp['situação'] = 'BOA'
-        elif resp['média'] >= 5:
-            resp['situação'] = 'RAZOÁVEL'
+        if dic['média'] >= 7:
+            dic['situação'] = 'BOA'
+        elif dic['média'] >= 5:
+            dic['situação'] = 'RAZOÁVEL'
         else:
-            resp['situação'] = 'RUIM'
-    return resp
+            dic['situação'] = 'RUIM'
+    return dic
 
 
 # Programa Principal
-resp = notas(5.5, 2.5, 7.5, 10, sit=False)
+resp = notas(5.5, 9.5, 10, 6.5, sit=True)
 print(resp)
+help(notas)
 
 # Minha outra solução sem (max) e (min)
+
+
 '''def notas(*n, sit=False):
     """
     -> Função para analisar notas e situações de vários alunos.
@@ -36,7 +36,7 @@ print(resp)
     :param sit: valor opcional, indicando se deve ou não adicionar a situação
     :return: dicionário com várias informações sobre a situação da turma.
     """
-    resp = {}
+    dic = {}
     maior = menor = soma = cont = 0
     for nota in n:
         soma += nota
@@ -48,20 +48,49 @@ print(resp)
             if nota < menor:
                 menor = nota
         cont += 1
-    resp['total'] = len(n)
-    resp['maior'] = maior
-    resp['menor'] = menor
-    resp['média'] = soma / len(n)
+    dic['total'] = len(n)
+    dic['maior'] = maior
+    dic['menor'] = menor
+    dic['média'] = soma / len(n)
     if sit:
-        if resp['média'] >= 7:
-            resp['situação'] = 'BOA'
-        elif resp['média'] >= 5:
-            resp['situação'] = 'RAZOÁVEL'
+        if dic['média'] >= 7:
+            dic['situação'] = 'BOA'
+        elif dic['média'] >= 5:
+            dic['situação'] = 'RAZOÁVEL'
         else:
-            resp['situação'] = 'RUIM'
-    return resp
+            dic['situação'] = 'RUIM'
+    return dic
 
 
 # Programa Principal
 resp = notas(5.5, 2.5, 7.5, 10, sit=False)
 print(resp)'''
+
+# Solução Gustavo Guanabara
+
+
+'''def notas(*n, sit=False):
+    """
+    -> Função para analisar notas e situações de vários alunos.
+    :param n: uma ou mais notas dos alunos (aceita vários)
+    :param sit: valor opcional, indicando se deve ou não adicionar a situação
+    :return: dicionário com várias informações sobre a situação da turma.
+    """
+    r = dict()
+    r['total'] = len(n)
+    r['maior'] = max(n)
+    r['menor'] = min(n)
+    r['média'] = sum(n) / len(n)
+    if sit:
+        if r['média'] >= 7:
+            r['situação'] = 'BOA'
+        elif r['média'] >= 5:
+            r['situação'] = 'RAZOÁVEL'
+        else:
+            r['situação'] = 'RUIM'
+    return r
+
+
+resp = notas(5.5, 9.5, 10, 6.5, sit=True)
+# print(resp)
+help(notas)'''
