@@ -1,7 +1,21 @@
+cores = {
+    'limpar': '\033[m',
+    'vermelho': '\033[0;31m',
+    'verde': '\033[0;32m',
+    'amarelo': '\033[0;33m',
+    'azul': '\033[0;34m'
+}
+limpar = cores['limpar']
+vermelho = cores['vermelho']
+verde = cores['verde']
+amarelo = cores['amarelo']
+azul = cores['azul']
+
+
 def titulo(txt):
-    print('-' * 30)
-    print(f'{txt:^30}')
-    print('-' * 30)
+    print(f'{azul}-' * 30)
+    print(f'{amarelo}{txt:^30}')
+    print(f'{azul}-{limpar}' * 30)
 
 
 def dobro(preco=0):
@@ -26,9 +40,9 @@ def diminuir(preco=0, reducao=0):
 
 def resumo(preco=0, aumento=0, reducao=0):
     titulo('RESUMO DO VALOR')
-    print(f'{"Preço analisado:":<18} R${preco:,.2f}')
-    print(f'{"Dobro do preço:":<18} R${dobro(preco):,.2f}')
-    print(f'{"Metade do preço:":<18} R${metade(preco):,.2f}')
-    print(f'{f"{aumento}% de aumento:":<18} R${aumentar(preco, aumento):,.2f}')
-    print(f'{f"{reducao}% de redução:":<18} R${diminuir(preco, reducao):,.2f}')
-    print('-' * 30)
+    print(f'{"Preço analisado:":<18} {amarelo}R${preco:,.2f}{limpar}')
+    print(f'{"Dobro do preço:":<18} {verde}R${dobro(preco):,.2f}{limpar}')
+    print(f'{"Metade do preço:":<18} {vermelho}R${metade(preco):,.2f}{limpar}')
+    print(f'{f"{aumento}% de aumento:":<18} {verde}R${aumentar(preco, aumento):,.2f}{limpar}')
+    print(f'{f"{reducao}% de redução:":<18} {vermelho}R${diminuir(preco, reducao):,.2f}{limpar}')
+    print(f'{azul}-{limpar}' * 30)
