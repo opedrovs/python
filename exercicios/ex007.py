@@ -12,8 +12,8 @@ am = cores['amarelo']
 az = cores['azul']
 
 aluno = input('Nome do aluno: ')
-pri = float(input('Primeira nota de {}{}{}: '.format(v, aluno, l)))
-seg = float(input('Segunda nota de {}{}{}: '.format(v, aluno, l)))
+pri = float(input('Primeira nota de {}{}{}: '.format(v, aluno, li)))
+seg = float(input('Segunda nota de {}{}{}: '.format(v, aluno, li)))
 media = (pri + seg) / 2
 print('A média entre {}{:.1f}{} e {}{:.1f}{} do aluno {}{}{} é de {}{:.1f}{}.'.format(az, pri, l, az, seg, l, v, aluno, l, am, media, l))
 

@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db34cfa5-d016-4ff1-90e8-836d06a43ac6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/exercicios/ex080.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/ex080.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex107.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex107/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex107/moeda.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex108.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex108/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex108/moeda.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex109.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex109/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex109/moeda.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex110.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex110/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex110/moeda.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex111.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex111/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex111/utilidadescev/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex111/utilidadescev/dado.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex111/utilidadescev/moeda.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex112.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex112/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex112/utilidadescev/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex112/utilidadescev/dado.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex112/utilidadescev/moeda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/ex007.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/ex007.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +42,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/pedrovsky/Documentos/estudos/python/exercicios"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
