@@ -38,7 +38,7 @@ def diminuir(preco=0, reducao=0):
     return preco
 
 
-def resumo(preco, aumento, reducao):
+def resumo(preco=0, aumento=0, reducao=0):
     titulo('RESUMO DO VALOR')
     print(f'{"Preço analisado:":<18} {amarelo}R${preco:,.2f}{limpar}')
     print(f'{"Dobro do preço:":<18} {verde}R${dobro(preco):,.2f}{limpar}')

@@ -12,8 +12,7 @@ verde = cores['verde']
 amarelo = cores['amarelo']
 
 p = float(input(f'Digite o preço: {amarelo}R${limpar}'))
-print(f'A metade de {moeda.moeda(p)} é {vermelho}{moeda.metade(p, True)}{limpar}')
+print(f'A metade de {moeda.moeda(p)} é {vermelho}{moeda.metade(p, False)}{limpar}')
 print(f'O dobro de {moeda.moeda(p)} é {verde}{moeda.dobro(p, True)}{limpar}')
 print(f'Reduzindo 13%, temos {vermelho}{moeda.diminuir(p, 13, True)}{limpar}')
 print(f'Aumentando 10%, temos {verde}{moeda.aumentar(p, 10, True)}{limpar}')
-

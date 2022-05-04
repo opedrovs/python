@@ -1,14 +1,18 @@
 def metade(preco):
-    return preco / 2
+    preco /= 2
+    return preco
 
 
 def dobro(preco):
-    return preco * 2
+    preco *= 2
+    return preco
 
 
 def aumentar(preco, porc):
-    return preco + (preco / 100) * porc
+    preco += (preco / 100) * porc
+    return preco
 
 
 def diminuir(preco, porc):
-    return preco - (preco / 100) * porc
+    preco -= (preco / 100) * porc
+    return preco

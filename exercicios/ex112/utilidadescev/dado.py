@@ -1,5 +1,3 @@
-
-
 def leiaDinheiro(valor):
     while True:
         valor = str(input('Digite o preço: \033[0;33mR$\033[m')).strip()
