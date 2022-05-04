@@ -1,4 +1,3 @@
-'''
 from ex107 import moeda
 
 cores = {
@@ -16,6 +15,6 @@ p = float(input(f'Digite o preço: {amarelo}R${limpar}'))
 print(f'A metade de {p} é {vermelho}{moeda.metade(p)}{limpar}')
 print(f'O dobro de {p} é {verde}{moeda.dobro(p)}{limpar}')
 print(f'Reduzindo 13%, temos {vermelho}{moeda.diminuir(p, 13)}{limpar}')
-print(f'Aumentando 10%, temos {verde}{moeda.aumentar(p, 10)}{limpar}')'''
+print(f'Aumentando 10%, temos {verde}{moeda.aumentar(p, 10)}{limpar}')
 
 # Solução Gustavo Guanabara
