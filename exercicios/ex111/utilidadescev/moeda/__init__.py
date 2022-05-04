@@ -1,3 +1,5 @@
+# Minha solução
+
 '''cores = {
     'limpar': '\033[m',
     'vermelho': '\033[0;31m',

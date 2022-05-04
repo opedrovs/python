@@ -1,18 +1,41 @@
 def metade(preco):
-    preco /= 2
-    return preco
+    res = preco / 2
+    return res
 
 
 def dobro(preco):
-    preco *= 2
-    return preco
+    res = preco * 2
+    return res
 
 
 def aumentar(preco, porc):
-    preco += (preco / 100) * porc
-    return preco
+    res = preco + (preco / 100) * porc
+    return res
 
 
 def diminuir(preco, porc):
-    preco -= (preco / 100) * porc
-    return preco
+    res = preco - (preco / 100) * porc
+    return res
+
+
+# Solução Gustavo Guanabara
+
+
+'''def aumentar(preço, taxa):
+    res = preço + (preço * taxa/100)
+    return res
+
+
+def diminuir(preço, taxa):
+    res = preço - (preço * taxa/100)
+    return res
+
+
+def dobro(preço):
+    res = preço * 2
+    return res
+
+
+def metade(preço):
+    res = preço / 2
+    return res'''
