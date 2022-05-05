@@ -1,33 +1,33 @@
 cores = {
     'limpar': '\033[m',
-    'destaque': '\033[1;31m',
+    'vermelho': '\033[0;31m',
     'amarelo': '\033[0;33m'
 }
 li = cores['limpar']
-dt = cores['destaque']
+vm = cores['vermelho']
 am = cores['amarelo']
 
 # Minha solução
 
 
-def leiaInt(num):
+'''def leiaInt(num):
     print('-' * 30)
     while True:
         num = str(input('Digite um número: ')).strip()
         if int(num.isnumeric()):
             break
-        print(f'{dt}ERRO! Digite um número inteiro válido.{li}')
+        print(f'{vm}ERRO! Digite um número inteiro válido.{li}')
     return num
 
 
 # Programa Principal
 n = leiaInt('Digite um número: ')
-print(f'Você acabou de digitar o número {am}{n}{li}')
+print(f'Você acabou de digitar o número {am}{n}{li}')'''
 
 # Solução Gustavo Guanabara
 
 
-'''def leiaInt(msg):
+def leiaInt(msg):
     ok = False
     valor = 0
     while True:
@@ -44,5 +44,5 @@ print(f'Você acabou de digitar o número {am}{n}{li}')
 
 # Programa principal
 n = leiaInt('Digite um número: ')
-print(f'Você acabou de digitar o número {n}')'''
+print(f'Você acabou de digitar o número {n}')
 
