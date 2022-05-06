@@ -34,7 +34,8 @@ while True:
         print(f'{dest}ERRO!{verm} Digite uma opção válida!{limp}')
     elif opc == 1:
         dados.titulo('PESSOAS CADASTRADAS')
-        arquivo = open('cadastro')
+        # Mostrar linha por linha com nome e idade
+        arquivo = open('dados/cadastro')
         linhas = arquivo.readlines()
         for linha in linhas:
             print(f'{linha}', end='')
@@ -49,11 +50,9 @@ while True:
             else:
                 print(f'Novo registro de {nome} adicionado.')
                 break
-        novocad = list()
-        novocad.append(f'{nome:<28} {idade} anos\n')
-        arquivo = open('cadastro', 'a')
-        arquivo.writelines(novocad)
-        arquivo.close()
+        # Adicionar uma pessoa pessoa no cadastro
+        dados.adicionar(nome, idade)
     else:
+        # Sair do Sistema
         dados.titulo('Saindo do sistema... Até logo!')
         break
