@@ -1,5 +1,5 @@
 from time import sleep
-from ex115 import dados
+import dados
 
 cores = {
     'limpar': '\033[m',
@@ -17,7 +17,6 @@ amar = cores['amarelo']
 azul = cores['azul']
 
 while True:
-    sleep(1)
     dados.titulo('MENU PRINCIPAL')
     print(f'''{amar}1{limp} - {azul}Ver pessoas cadastradas
 {amar}2{limp} - {azul}Cadastrar nova Pessoa
@@ -36,9 +35,7 @@ while True:
         dados.titulo('PESSOAS CADASTRADAS')
         # Mostrar linha por linha com nome e idade
         arquivo = open('dados/cadastro')
-        linhas = arquivo.readlines()
-        for linha in linhas:
-            print(f'{linha}', end='')
+        dados.mostrar(arquivo)
     elif opc == 2:
         dados.titulo('NOVO CADASTRO')
         nome = str(input('Nome: '))
@@ -56,3 +53,4 @@ while True:
         # Sair do Sistema
         dados.titulo('Saindo do sistema... Até logo!')
         break
+    sleep(1.5)
