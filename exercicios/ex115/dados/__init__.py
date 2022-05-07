@@ -11,7 +11,7 @@ def mostrar(arq):
     arq.close()
 
 
-def adicionar(nome, idade):
+def cadastrar(nome, idade):
     novocad = list()
     novocad.append(f'{nome:<28} {idade} anos\n')
     arquivo = open('dados/cadastro', 'a')
